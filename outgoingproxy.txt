@@ -1,0 +1,35 @@
+Enable Outgoing Proxy=Aktivovat odchozí proxy
+Name=Název
+Optional=Volitelné
+Outgoing Proxy=Odchozí proxy
+Password=Heslo
+Please match the requested format=Dodrž formát požadovaného vstupu
+Required=Povinné
+Select Proxy=Vyber proxy
+User=Uživatel
+
+:outgoing_proxy_enable_plug:
+> Vyber proxy server, který má být použit. Lze vybrat pouze online proxy.
+>
+> Pokud tvé síťové prostředí vyžaduje odchozí HTTP proxy, nastav ji zde.
+>
+> Odchozí připojení z webového rozhraní a některých systémových procesů budou používat zadanou HTTP proxy. Instalace a aktualizace Docker kontejnerů tuto proxy také využívají, samotné kontejnery a virtuální stroje (VM) však nikoli.
+>
+> Pro komplexnější řešení zvaž nastavení <u><a href='https://docs.unraid.net/unraid-os/manual/security/vpn/#configuring-vpn-tunneled-access-for-system/' target='_blank'>VPN tunelovaného přístupu pro systém</a></u>.
+:end
+
+:outgoing_proxy_name_plug:
+> Název odchozí proxy serveru.
+:end
+
+:outgoing_proxy_url_plug:
+> URL adresa odchozí proxy. Může být zadána s přihlašovacími údaji nebo bez nich. Přihlašovací údaje se načítají z URL.
+>
+> Pokud zadáš uživatele a heslo zvlášť, budou použity jako nové přihlašovací údaje.
+:end
+
+:outgoing_proxy_user_plug:
+> Uživatelské jméno pro odchozí proxy.
+:end
+
+
