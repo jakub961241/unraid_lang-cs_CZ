@@ -1,1 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Language>
+  <LanguageURL>https://github.com/jakub961241/unraid_lang-cs_CZ/archive/refs/heads/main.zip</LanguageURL>
+  <Language>Czech</Language>
+  <LanguageLocal>Čeština</LanguageLocal>
+  <LanguagePack>cs_CZ</LanguagePack>
+  <Author>jakub961241</Author>
+  <Name>Český jazykový balíček</Name>
+  <TemplateURL>https://raw.githubusercontent.com/unraid/language-templates/master/limetech/lang-en_US.xml</TemplateURL>
+  <Version>2025.5.24</Version>
+  <Icon>https://upload.wikimedia.org/wikipedia/commons/c/cb/Flag_of_the_Czech_Republic.svg</Icon>
+  <Support>https://forums.unraid.net/</Support>
+  <Description>
+Toto je český překlad pro Unraid a podporované pluginy.
 
+This is a Czech translation for Unraid and supported plugins.
+  </Description>
+</Language>
