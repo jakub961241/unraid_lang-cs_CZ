@@ -1,0 +1,10 @@
+Click DETECT=Klepněte na ZJISTIT
+Detect=Zjistit
+Exclude drives=Vynechat disky
+Fan control function=Funkce ovládání ventilátorů
+High temperature threshold=Práh vysoké teploty
+Low temperature threshold=Práh nízké teploty
+Minimum PWM value=Minimální hodnota PWM
+PWM controller=PWM řadič
+PWM fan=PWM ventilátor
+Refresh interval=Interval obnovení

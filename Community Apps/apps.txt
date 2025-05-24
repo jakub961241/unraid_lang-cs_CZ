@@ -1,0 +1,441 @@
+Cancel=Zrušit
+
+; My PSAs / banners
+Happy New Year=Šťastný nový rok
+Happy Holidays from Andrew, Tracey, and family=Hezké svátky vám přeje Andrew a Tracey s rodinou
+Please Enjoy Responsibly=Prosím užívejte odpovědně
+Popup Blocked CA requires popups to be enabled under certain circumstances You must white list your server within your browser to allow popups=Komunitní aplikace za některých okolností požadují povolená vyskakovací okna. Musíte je pro váš server povolit v prohlížeči.
+Docker Service Not Enabled - Only Plugins Available To Be Installed Or Managed=Není povolena služba Dockeru - Jsou k dispozici pouze doplňky pro instalaci nebo pro správu
+Docker system failed to start - Only Plugins Available To Be Installed Or Managed=Systém Dockeru se nemohl spustit - Můžete pouze instalovat nebo spravovat doplňky
+Array not started - Only Plugins Available To Be Installed Or Managed=Pole není spuštěné - Můžete pouze instalovat nebo spravovat doplňky
+Community Applications works best when cookies are enabled in your browser Certain features may not be available=Komunitní aplikace nejlépe fungují pokud máte povolené cookies. Pokud je máte v prohlížeči zakázané nemusí být k dispozici některé funkce
+Backup Server Active Some icons may not appear, and plugin installations may be affected=Záložní server aktivován, některé ikony se nemusí zobrazit a instalace doplňků může být narušena
+Debugging enabled This significantly increases the memory used by your browser=Ladění povoleno. Tímto se zásadně zvýší využití paměti prohlížečem
+Browser translation detected Display issues may result=Zjištěn překlad v prohlížeči. Mohou nastat chyby zobrazení
+Action Centre Enabled=
+
+; Sorting Options
+Sort By=Třídit podle
+Name Ascending=Názvu vzestupně
+Name Descending=Názvu sestupně
+Downloads=Stažení
+Date Added=Data přidání
+Number Of Apps=Počtu aplikací
+; Initial disclaimer translations
+Disclaimer=Vyloučení odpovědnosti
+All applications listed here are 3rd party additions to Unraid Neither the authors of Community Applications nor Limetech make any warranty as to the suitability of any application listed here=Všechny zde uvedené aplikace jsou doplňky třetích stran. Autoři Komunitních Aplikací ani Limetech na ně neposkytují žádnou záruku použitelnosti.
+Every attempt is made to ensure that only safe and compatible applications are present=Snažíme se zajistit, aby se zde nacházely pouze kompatibilní a bezpečné aplikace.
+Application Policy=Zásady aplikací
+I Understand=Rozumím
+Installations of apps disabled You must accept the warning to be able to install applications=Instalace aplikací je zakázána. Pro instalaci aplikací musíte přijmout varování.
+Click here=Klepněte sem
+%s Results Per Page=%s výsledků na stránku
+Results Per Page: %s=Výsledků na stránku: %s
+
+; Plugin Disclaimer
+Community Applications contains both docker containers and plugin applications Plugins are designed for OS enhancements, and run with full privileges on your system and are clearly identified within CA=Komunitní Aplikace obsahují jak kontejnery dockeru, tak doplňky. Doplňky sloužící pro rozšíření operačního sytému a běžící s plnými přístupovými právy jsou v KA zřetelně označené
+Plugin Note=Poznámka k doplňku
+
+; Multi Install
+Install Plugin Applications=Instalace doplňků
+Select all on page=Vybrat vše na stránce
+Install Application=Instalovat aplikaci
+Install Applications=Instalovat aplikace
+Update Applications=Aktualizovat aplikace
+Are you sure you want to update %s applications=Opravdu chcete aktualizovat %s aplikací?
+Are you sure you want to install %s docker and %s plugin applications=Opravdu chcete instalovat %1$s aplikací dockeru a %2$s doplňků?
+
+; Searches
+Search=Vyhledat
+Click Here To Get More Results From DockerHub=Pro více výsledků z DockerHubu klepněte sem
+No Matching Applications Found=Nebyly nalezeny žádné odpovídající aplikace
+
+; Repository Related
+%s removed as favourite repository=%s odstraněno z oblíbených úložišť
+%s set as favourite repository=%s přidáno do oblíbených úložišť
+Click to remove favourite repository=Klepnutím odstraníte oblíbené úložiště
+Click to set %s as favourite repository=Klepnutím přidáte %s nastavíte jako oblíbené
+Search for apps in repository=Hledat aplikace v úložišti
+No description present=Popisek není k dispozici
+Go to the forum page=Přejít na stránku na fóru
+Go to the webpage=Přejít na stránku
+Go to reddit=Přejít na reddit
+Go to facebook=Přejít na facebook
+Go to discord=Přejít na discord
+Go to forum profile=Přejít na profil na fóru
+Show Profile=Zobrazit profil
+SHOW MORE=ZOBRAZIT VÍCE
+SHOW LESS=ZOBRAZIT MÉNĚ
+Read more=Číst více
+Total Applications=Celkem aplikací
+Total Known Downloads=Celkem stažení
+Total Docker Applications=Celkem aplikací Dockeru
+Total Plugin Applications=Celkem zásuvných modulů
+Total Languages=Celkem jazyků
+Average Downloads Per App=Průměrná stažení na aplikaci
+Web Page=Webová stránka
+Forum=Fórum
+Forum Profile=Profil na fóru
+Profile=Profil
+Facebook=Facebook
+Reddit=Reddit
+Twitter=Twitter
+Discord=Discord
+Search Apps=Prohledat aplikace
+Registry=Registr
+Details=Detaily
+Added=Přidáno
+; Install Plugin title of openbox
+Install Plugin=Instalace doplňku
+Update Plugin=Aktualizovat doplněk
+
+Requirements not met=Požadavky nesplněny
+The requirements for this upgrade have not been met on your system=Váš systém nesplňuje požadavky na tuto aktualizaci
+
+BACK=ZPĚT
+
+; Remove App from previously installed
+Delete Template=Smazat šablonu
+Yes, delete it=Ano, smazat
+
+; Uninstall popup
+Uninstall Application=Odinstalovat aplikaci
+Yes uninstall it=Ano, odinstalovat
+
+; Remove Private Application
+Remove Private Application=Odinstalovat soukromou aplikaci
+Yes, remove it=Ano, odinstalovat
+
+; App Pinning
+Click to pin this application=Klepněte pro připnutí této aplikace
+Click to unpin this application=Klepněte pro odepnutí této aplikace
+Pin App=Připnout aplikaci
+Unpin App=Odepnout aplikaci
+
+; Branch installations
+Choose A Branch To Install=Zvolte větev pro instalaci
+
+; Multiple application installs
+; no apps selected
+Install Selected Applications=Instalovat zvolené aplikace
+
+Yes, install it=Ano, nainstalovat
+
+; Multi-install popup
+Yes, install them=Ano, nainstalovat
+Cookies not enabled Plugins must be separately installed from docker applications=Nejsou povoleny cookies. Doplňky se musí instalovat zvlášť z aplikací Dockeru
+Docker applications will be installed utilizing the most recently saved template with no user input on your part=Aplikace Dockeru se nainstalují automaticky za použití naposledy uložené šablony
+Updating Support Links=Odkazy podpory aktualizace
+Downloading docker icons=Stahuji ikony dockeru
+Finished Installing If the DONE button did not appear, then you will need to click the red X in the top right corner=Instalace dokončena. Pokud se nezobrazilo tlačítko HOTOVO, klepněte na červené X v horním pravém rohu
+
+; error messages
+No data was returned It is probable that another browser session has rebooted your server Reloading this browser tab will probably fix this error=Nebyla vrácena žádná data. Je možné že jiné okno prohlížeče restartovalo váš server. Obnovte okno prohlížeče.
+An error occurred Could not find any %s Apps=Vyskytla se chyba: Nemohu najít žádnou aplikaci %s
+Download of appfeed failed=Selhalo stažení seznamu aplikací
+; the %s here refers to a function being called
+Something really went wrong here=Tady se něco opravdu hodně nepovedlo
+Post the ENTIRE contents of this message in the Community Applications Support Thread=Pošlete CELÝ obsah této zprávy do vlákna podpory Komunitních aplikací
+Unknown error happened Please post a screenshot in the support thread of the Statistics screen=Vyskytla se neznámá chyba. Prosím pošlete snímek obrazovky do vlákna podpory obrazovky Statistiky
+Something really wrong happened Reloading the Apps tab will probably fix the problem=Tady se něco opravdu hodně nepovedlo. Obnovením záložky Aplikace nejspíše opravíte tento problém
+This plugin has a duplicated name from another plugin %s This will impact your ability to install both plugins simultaneously=Tento doplněk má duplicitní název s jiným doplňkem zvaným %s. Nebudete tedy moct mít oba doplňky nainstalované najednou
+You have been logged out=Byli jste odhlášeni
+Fatal Flash Drive Error=Fatální chyba flash disku
+This usually means your flash drive is corrupted or has dropped offline The rest of the Unraid GUI will also be affected Post a new thread in the Unraid forums if this error continues=Toto obvykle znamená, že se váš flash disk deaktivoval, nebo je poškozený. Bude to mít vliv i na zbytek grafického rozraní Unraid. Pokud bude tato chyba přetrvávat, napište nový příspěvek do fóra Unraid.
+Fatal Docker Image Error=Fatální chyba obrazu Dockeru
+Your docker image or folder is either read-only or completely full Issues will result because of this You should create a new post in the Unraid forums and include your diagnostics=Váš obraz, nebo složka Dockeru jsou buď pouze pro čtení nebo plné. To může způsobovat problémy. Měli byste vytvořit příspěvek na fóru Unraidu a připojit diagnostické informace.
+This template is set up to use a custom network You may have to adjust the network or IP address etc to match your system=Tato šablona má přednastavené použití vlastní sítě. Možná budete muset nastavit síť nebo IP adresu, tak aby odpovídali vašemu systému.
+One or more ports used by this application are already in use by another service or app running on your server You will need to adjust the host ports accordingly on the template=Jeden, nebo více portů využívaných touto aplikací už zabrala jiná služba, nebo aplikace běžící na vašem serveru. Budete muset nastavit jiné porty hostitele v šabloně.
+
+; CA Sections Keep the length reasonable
+Home=Domů
+Installed Apps=Instalované aplikace
+Previous Apps=Předchozí aplikace
+Pinned Apps=Připnuté aplikace
+Favourite Repo=Oblíbené úložiště
+Action Centre=Centrum akcí
+Recently Added=Nedávno přidané
+Random Apps=Náhodné aplikace
+Top New Installs=Nejvíce nových instalací
+Top Trending Apps=Nejvíce trendující aplikace
+Spotlight Apps=Zvýrazněné aplikace
+All Apps=Všechny aplikace
+Statistics=Statistiky
+Credits=Autoři
+Support=Podpora
+VERSION=VERZE
+Change Log=Seznam změn
+Debugging=Ladění
+
+; Credits
+Development=Vývoj
+Additional Contributions=Dále přispěli
+GUI Layout Design=Návrh vzhledu uživatelského rozhraní
+Application Feed=Seznam aplikací
+Additional Testing=Další testování
+Moderation=Moderování
+Additional Libraries=Další knihovny
+Copyright=Copyright
+Translation=Překlad
+
+; Statistics page
+
+unknown=neznámý
+Last Change To Application Feed=Poslední změna v seznamu aplikací
+Docker Applications=Aplikace Dockeru
+Plugin Applications=Aplikace doplňků
+Templates=Šablony
+Official Containers=Oficiální kontejnery
+Repositories=Úložiště
+Private Docker Applications=Soukromé aplikace Dockeru
+Invalid Templates=Neplatné šablony
+Template Errors=Chyby šablon
+Blacklisted Apps=Aplikace na černé listině
+Incompatible Applications=Nekompatibilní aplikace
+Deprecated Applications=Zastaralé aplikace
+Moderation Entries=Záznamy moderování
+Primary Server=Primární server
+Backup Server=Záložní server
+Installs not allowed from this page=Instalace nejsou povolené z této stránky
+
+; Statistics Popup
+No invalid templates found=Nebyly nalezeny žádné neplatné šablony
+These templates are invalid and the application they are referring to is unknown=Tyto šablony jsou neplatné a aplikace na kterou odkazují je neznámá
+No templates were automatically fixed=Žádné šablony nebyly automaticky opraveny
+All of these errors found have been fixed automatically=Všechny tyto chyby byly automaticky opraveny
+Note that many of these errors can be avoided by following the directions=Těchto chyb se lze vyvarovat, pokud dodržíte následující instrukce
+HERE=ZDE
+The following plugins have duplicated filenames and are not able to be installed simultaneously=Následující doplňky mají duplicitní názvy souborů a není možné je instalovat současně
+The following docker applications refer to the same docker repository but may have subtle changes in the template to warrant this=Následující aplikace Dockeru odkazují na stejné úložiště kontejneru, ale mohou mít mírné změny v šabloně
+If any of these entries are incorrect then contact the moderators of CA to discuss=Pokud je kterýkoliv z těchto záznamů nesprávný, kontaktujte moderátory KA
+Global Repository Comments=Komentáře globálního úložiště
+Applied to all applications=(Platí pro všechny aplikace)
+Individual Application Moderation=Individuální moderování aplikace
+
+; Misc
+Community Applications Changelog=Seznam změn Komunitních Aplikací
+
+Each month we highlight some of the amazing work from our community=Každý měsíc zvýrazňujeme některé úžasné práce naší komunity
+Check out these newly added applications from our awesome community=Podívejte se na tyto nově přidané aplikace od naší úžasné komunity
+Check out these up and coming apps=Podívejte se na tyto slibné aplikace
+These apps have the highest percentage of new installs=Tyto aplikace mají největší procento nových instalací
+An assortment of randomly chosen apps=Výběr náhodných aplikací
+
+; Categories try not to be excessively long This is displayed on the left of CA screen
+
+Backup=Záloha
+Cloud=Cloud
+Crypto Currency=Kryptoměna
+Downloaders=Stahovače
+Drivers=Ovladače
+Game Servers=Herní servery
+Home Automation=Automatizace domácnosti
+Media Applications=Mediální aplikace
+Books=Knihy
+Music=Hudba
+Photos=Fotky
+Video=Videa
+Other=Ostatní
+Media Servers=Servery médií
+Network Services=Síťové služby
+DNS=DNS
+FTP=FTP
+Management=Správa
+Messenger=Messenger
+Proxy=Proxy
+VOIP=VOIP
+VPN=VPN
+Web=Web
+Privacy=Soukromí
+Productivity=Produktivita
+Security=Zabezpečení
+Spotlight=Zvýrazněné
+Tools Utilities=Nástroje / Údržba
+System=Systém
+Themes=Témata
+Utilities=Nástroje
+Private Apps=Soukromé aplikace
+Uncategorized=Nezařazené
+
+; Categories displayed within a popup or on the card.  Where an entry exists after the "=" it is not translated, but rather how it should look
+GameServers=HerníServery
+HomeAutomation=AutomatizaceDomácnosti
+MediaApp=MediálníAplikace
+MediaAppBooks=MediálníAplikace:Knihy
+MediaAppMusic=MediálníAplikace:Hudba
+MediaAppPhotos=MediálníAplikace:Fotky
+MediaAppVideo=MediálníAplikace:Videa
+MediaAppOther=MediálníAplikace:Ostatní
+MediaServer=ServeryMédií
+MediaServerBooks=ServeryMédií:Knihy
+MediaServerMusic=ServeryMédií:Hudba
+MediaServerPhotos=ServeryMédií:Fotky
+MediaServerVideo=ServeryMédií:Videa
+MediaServerOther=ServeryMédií:Ostatní
+Network=Síť
+NetworkDNS=Síť:DNS
+NetworkFTP=Síť:FTP
+NetworkManagement=Síť:Správa
+NetworkProxy=Síť:Proxy
+NetworkVOIP=Síť:VOIP
+NetworkVPN=Síť:VPN
+NetworkPrivacy=Network:Privacy
+NetworkWeb=Síť:Web
+NetworkOther=Síť:Ostatní
+ToolsSystem=Nástroje:Systém
+ToolsThemes=Nástroje:Témata
+ToolsUtilities=Nástroje:Údržba
+OtherUncategorized=Ostatní:Nezařazené
+and %s more=a ještě dalších %s
+
+; App Popup Related
+This application template has been blacklisted=Tato aplikace / šablona je na černé listině
+This application template has been deprecated=Tato aplikace / šablona je zastaralá
+This application has additional requirements=Tato aplikace má další požadavky
+Additional Requirements=Další požadavky
+Donate To Author=Přispět autorovi
+Donate To Maintainer=Přispět údržbářovi
+CLOSE=ZAVŘÍT
+Author=Autor
+Maintainer=Údržbář
+DockerHub=DockerHub
+Application Template=Šablona aplikace
+DockerHub Stars=Hvězdičky na DockerHubu
+Added to CA=Přidáno do KA
+Date Updated=Datum aktualizace
+Current Version=Aktuální verze
+Min OS=Minimální OS
+Max OS=Maximální OS
+Total Downloads=Celkem stažení
+Licence=Licence
+Ranked #%s=Pořadí v hodnocení: %s
+; as in Trending up or down arrow
+Trending %s=Trend %s
+; as in As of some date
+As of %s=(K %s)
+Play Video=Přehrát video
+Play Video %s=Přehrát video %s
+This application is not compatible with your version of Unraid=Tato aplikace není kompatibilní s vaší verzí Unraidu
+Another browser tab or device has updated the displayed templates Some actions are not available=Jiné okno prohlížeče, nebo zařízení aktualizovalo zobrazené šablony. Některé akce nejsou k dispozici
+WebUI=Webové rozhraní
+Reinstall=Přeinstalovat
+Reinstall From Previous Apps=Přeinstalovat z předchozích aplikací
+Install=Instalovat
+Uninstall=Odinstalovat
+Project=Projekt
+Read Me First=Nejdříve si přečtěte
+Install second instance=Instalovat druhou instanci
+Install Using The Templates Default Tag=Instalovat pomocí výchozího štítku šablony
+Moderator Comments=Komentáře moderátora:
+Note not all authors keep up to date on change logs=Ne všichni autoři udržují seznam změn aktuální
+Note not all maintainers keep up to date on change logs=Ne všichni údržbáři udržují seznam změn aktuální
+Last Update=Poslední aktualizace
+Note All statistics are only gathered every 30 days=Všechny statistiky se shromažďují jen za posledních 30 dní
+;the following if using a space you MUST use nbsp but keep it down to one word if at all possible
+Donate=Přispět
+Currently Installed Version=Aktuálně instalovaná verze
+Install The Update=Nainstalovat aktualizaci
+; as in you have the latest version already installed
+Latest Version=Nejnovější verze
+Multi Language Support=Podpora více jazyků
+Support Forum=Fórum podpory
+; as in more than 100000
+More than %s=Více než %s
+Remove from Previous Apps=Odstranit z předchozích aplikací
+Remove=Odstranit
+See All Apps=Zobrazit všechny aplikace
+Favourite=Oblíbené
+Application Type=Typ aplikace
+
+; Graphs
+Trend Per Month=Trend za měsíc
+Downloads Per Month=Stažení za měsíc
+
+; Multi install script
+Installing docker applications %s=Instaluji aplikace Dockeru %s
+Starting %s=Spouštím %s
+%s failed to start You should install it by itself to fix the errors=Nepodařilo se spustit %s. Pro opravu chyb byste měli zkusit nainstalovat tuto aplikaci samotnou
+Setting installed applications to autostart=Nastavuji instalované aplikace na automatické spuštění
+Docker Application Installation finished=Instalace aplikací Dockeru dokončena
+
+; Application Cards
+Actions=Akce
+Pending=
+This application is a driver plugin=Tato aplikace je ovladač (doplněk)
+This is a language pack=Toto je jazykový balíček
+This application is a docker container=Tato aplikace je kontejner Dockeru
+This application is a plugin=Tato aplikace je doplněk
+This is a spotlight application=Toto je zvýrazněná aplikace
+This is your favourite repository=Toto je oblíbené úložiště
+This application is from your favourite repository=Tato aplikace je z oblíbeného úložiště
+This application is pinned for later viewing=Tato aplikace je připnutá pro pozdější shlédnutí
+Private Application=Soukromá aplikace
+Remove Application From List=Odstranit aplikaci ze seznamu
+Check off to select multiple reinstalls=Zaškrtněte pro více přeinstalací
+Go to the plugin settings=Přejít na nastavení doplňku
+Click to reinstall the application using default values=Klepněte pro přeinstalaci aplikace s výchozími hodnotami
+Click to edit the application values=Klepněte pro úpravu hodnot aplikace
+Click to reinstall=Klepněte pro přeinstalování
+Click to install=Klepněte pro instalaci
+Click to go to the WebUI=Klepněte pro přechod do webového rozhraní
+This application template has been deprecated=Tato šablona aplikace je zastaralá
+This application template has been blacklisted=Tato šablona aplikace je na černé listině
+Click info to see the notes regarding this application=Klepněte na informace pro zobrazení poznámek k této aplikaci
+This application has additional requirements=Tato aplikace má další požadavky
+BETA=
+INSTALLED=NAINSTALOVÁNO
+OFFICIAL=OFICIÁLNÍ
+UPDATED=AKTUALIZOVANÝ
+This is an official container=Toto je oficiální kontejner
+Digitally Signed=Digitálně podepsáno
+This container is digitally signed=Tento kontejner je digitálně podepsaný
+Docker Hub=
+NOTE You must visit the dockerHub page to gather the information required to install correctly=Pozn.: Pro získání informací potřebných pro instalaci musíte navštívit stránku na Docker Hubu.
+Show CA templates=Zobrazit šablony KA
+Deprecated=Zastaralé
+Incompatible=Nekompatibilní
+Blacklisted=Na černé listině
+Template Exists=Šablona existuje
+Template already exists in Apps=Šablona již existuje v aplikacích
+; eg: LinuxServer Repository
+%s Repository=Úložiště %s
+; eg: Squid's Repository
+%s's Repository=Úložiště %s
+
+Info=Informace
+Attention=Pozor
+Repository=Úložiště
+Why we picked it=Proč jsme vybrali
+Application Spotlight %s=Zvýrazněná aplikace %s
+Unraid Staff=Tým Unraidu
+
+; Page Navigation
+Displaying %s - %s of %s=Zobrazeno %1$s - %2$s (z %3$s)
+
+Updating Content=Aktualizuji obsah
+Language=Jazyk
+Switch to this language=Přepnout na tento jazyk
+Country Code=Kód země
+Install Language Pack=Instalovat jazykový balíček
+Remove Language Pack=Odstranit jazykový balíček
+Update Language Pack=Aktualizovat jazykový balíček
+Installed Version=Instalovaná verze
+A note about translations=Poznámky k překladu
+Click here to view the language changelog=Klepnutím zobrazíte seznam změn jazyka
+View Missing Translations=Zobrazit chybějící překlady
+
+; Update Checks
+Check For Updates=Zkontrolovat aktualizace
+Check for updates already running=Kontrola aktualizací už běží
+Checking for docker container updates=Kontroluji aktualizace kontejnerů dockeru
+Checking for plugin updates=Kontroluji aktualizace doplňků
+Checking for language updates=Kontroluji aktualizace jazyků
+Checking %s=Kontroluji %s
+
+; dockerHub conversions
+Determine configuration=Zjistit nastavení
+Would you like CA to attempt to determine any applicable paths, ports, and variables for the template This will entail performing a test installation of the container It will be automatically deleted after processing The container will not be started=Chcete, aby se KA pokusily zjistit příslušné cesty, porty a proměnné pro šablonu? Toto bude zahrnovat provedení zkušební instalace kontejneru. Po testu bude automaticky smazán. Kontejner při tom nebude spuštěn.
+An error occurred - Could not determine configuration=Vyskytla se chyba - Nemohu zjistit nastavení
+; WebGui
+Click Install to download and install the Community Applications plugin=Pro stažení a instalaci **Komunitních Aplikací** klepněte na **Nainstalovat** doplněk
+

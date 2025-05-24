@@ -1,0 +1,31 @@
+Automatic theming=Automatické téma
+Bing API key=Klíč API Bingu
+Bing=Bing
+City name=Jméno města
+Country name=Název země
+Day theme=Denní téma
+Geocoding service=Služba geocodingu
+Google API key=Klíč API Google
+Google=Google
+MapQuest API key=Klíč API MapQuestu
+MapQuest=MapQuest
+Night theme=Noční téma
+No geographical coordinates found for the given address=Pro zadanou adresu nebyly nalezeny geografické souřadnice
+Please adjust=Prosím upravte
+Postal code=PSČ
+See=Viz
+Street address=Název ulice
+this site=tato stránka
+to obtain a Bing API key=pro získání klíče API Bingu
+to obtain a Google API key=pro získání klíče API Googlu
+to obtain a MapQuest API key=pro získání klíče API MapQuestu
+
+:day_night_plug:
+> Zadejte adresu (ulice, město, země), která se použije pro výpočet času východu a západu slunce.
+>
+> Geocodingová služba se použije pro převod vaší adresy na geografické souřadnice.<br>
+> Musíte se zaregistrovat do jedné z dostupných složek a získat unikátní klíč k API.
+>
+> **Denní** téma se použije mezi východem a západem slunce.<br>
+> **Noční** téma se použije mezi západem a východem slunce.
+:end

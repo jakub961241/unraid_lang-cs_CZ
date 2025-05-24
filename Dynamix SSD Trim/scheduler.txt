@@ -1,0 +1,41 @@
+Any=Jakákoliv
+Daily schedule=Denní rozvrh
+Day Date=Den / Datum
+Hour=Hodina
+Hourly schedule=Hodinový rozvrh
+Minute=Minuta
+Monthly schedule=Měsíční rozvrh
+Scheduled Tasks=Naplánované úlohy
+Weekly schedule=Týdenní rozvrh
+Day of the month=Den v měsíci
+Day of the week=Den v týdnu
+Every 2 hours=Každé 2 hodiny
+Every 3 hours=Každé 3 hodiny
+Every 4 hours=Každé 4 hodiny
+Every 6 hours=Každých 6 hodin
+Every 8 hours=Každých 8 hodiny
+Every hour=Každou hodinu
+HHMM=HH:MM
+SSD TRIM schedule=Rozvrh SSD TRIM
+Time of the day=Čas dne
+
+:trim_schedule_plug:
+> Zvolte si rozvrh spouštění trimu buď po hodině, denně, týdně, nebo měsíčně.
+>
+> Tento interval určí jak často se bude spouštět SSD Trim. Běží na pozadí.
+:end
+
+:trim_day_of_the_week_plug:
+> Zvolte si den, kdy se bude spouštět týdenní trim. Jinak bude vypnuté.
+:end
+
+:trim_day_of_the_month_plug:
+> Zvolte si datum, kdy se bude spouštět měsíční trim. Jinak bude vypnuté.
+:end
+
+:trim_time_of_the_day_plug:
+> Když je vybraný hodinový rozvrh, toto bude interval v hodinách. Interval vždy začíná v celou hodinu (0 minut).
+>
+> Pro jiný rozvrh si vyberte čas dne kdy se má spouštět trim.
+:end
+

@@ -1,0 +1,137 @@
+Add=Přidat
+Auto Mount USB Devices=Automaticky připojit USB zařízení
+Change Disk UUID=Změnit identifikátor UUID disku
+Change UUID=Změnit identifikátor UUID
+Change the disk UUID=Změnit identifikátor UUID disku
+Common Script=Společný skript
+Common Settings=Společná nastavení
+Destructive Mode=Ničivý režim
+Disk spin down is managed by Unraid=Vypínání disků spravuje Unraid
+Enable NFS export=Povolit export NFS
+Enable SMB Security=Povolit zabezpečení SMB
+Enter Disk Password=Zadat heslo disku
+Enter Pool Mount Point=Zadejte přípojný bod fondu
+Legacy Mount Point Compatibility=Kompatibilita se zastaralými přípojnými body
+Mount SSDs with discard option=Připojit disky SSD s volbou discard
+NFS Security=Zabezpečení NFS
+NFS Settings=Nastavení NFS
+NFS must be enabled to enable NFS Export=Pro povolení NFS exportu musíte povolit NFS
+NFS Version to use when Mounting Remote Shares=Verze NFS použitá při připojování vzdálených sdílení
+Rule=Pravidlo
+SMB Security=Zabezpečení SMB
+Select Disk=Vybrat disk
+Set Encrypted Disk Password=Nastavte heslo šifrovaného disku
+Set Password=Nastavit heslo
+Set Pool Mount Point=Nastavit přípojný bod fondu
+Set the Pool Mount Point for this disk=Nastavit přípojný bod fondu pro tento disk
+Set the disk Password=Nastavte heslo disku
+Specify SMB Version when Mounting Remote Shares=Určit verzi SMB pro připojení vzdálených sdílení
+Spin down disks=Vypnout disky
+The Unassigned Devices Plus plugin must be installed to enable Destructive Mode=Pro povolení ničivého režimu musíte nainstalovat doplněk Nepřiřazená zařízení Plus
+to SMB share config=pro nastavení SMB sdílení
+Unassigned Devices=Nepřiřazená zařízení
+Unraid 6.10 is required for NFSv4 support=Pro podporu NFSv4 je požadován Unraid 6.10
+Use only when directed for support=Použijte pouze pokud vám to doporučí podpora
+
+; Help
+;
+:ud_settings_plus_plug:
+> **Note:** The 'Unassigned Devices Plus' plugin must be installed in order to mount HFS+ and exFAT disk formats, and enable desctrctive mode.
+:end
+
+:ud_settings_common_script_plug:
+> If set, this script will run before the device script. The action is in the environment variable **$ACTION**. Be sure you reference all commands with their full path.
+:end
+
+:ud_settings_destructive_plug:
+> If enabled, this will allow you to erase and format partitions using Unassigned Devices. This cannot be enabled unless the 'Unassigned Devices Plus' plugin is installed.
+:end
+
+:ud_settings_mount_usb_devices_plug:
+> When set to **Yes**, will auto mount a new USB device and share it without user intervention.
+:end
+
+:ud_settings_discard_plug:
+> Mount SSDs that support discard with 'discard' option. If you are using the SSD Trim Settings to do a periodic trim of SSDs you can set this to **No**.
+:end
+
+:ud_settings_symlinks_plug:
+> Nastavte na **Ano** pro vytvoření symbolických odkazů pro /mnt/remotes/ v /mnt/disks/.
+>
+> Toto je z důvodů zpětné kompatibility s mapováními virtuálních strojů a kontejnerů Dockeru do /mnt/disks/.
+> Je doporučováno změnit vaše mapování do přípojného bodu /mnt/remotes/.
+>
+> Pokud nepotřebujete zpětnou kompatibilitu, ponechte nastavené na **Ne**.
+:end
+
+:ud_settings_specify_smb_vers_plug:
+> Set to **No** for Unassigned Devices to first try to mount remote shares by not setting the SMB version when mounting.
+>
+> Set to **Yes** for Unassigned Devices to only mount SMB remote shares specifying the SMB version.
+>
+> Some remote servers need to have the version specified.
+:end
+
+:ud_settings_debug_level_plug:
+> Setting a Debug Log Level adds additional logging in specific areas of UD for troubleshooting.
+>
+> Set to **None** to turn off debug logging.
+>
+> Set the Debug Log Level to a numeric value to debug a specific area of UD.
+>
+> **Note:** Don't leave the Debug Log Level on for extended periods of time.  It can add a lot of log messages to the syslog.
+:end
+
+:ud_settings_specify_nfs_vers_plug:
+> Set to **NFSv3** to mount all NFS Remote Shares with NFSv3.
+>
+> Set to **NFSv4** to mount all NFS Remote Shares with NFSv4.
+>
+> All NFS remote shares will be mounted with the specified version.
+:end
+
+:ud_settings_smb_security_plug:
+> Nastaví úroveň uživatelského zabezpečení SMB.
+>
+> + Set to **No** to disable SMB sharing.
+> + Set to **Public** will share devices, Remote SMB/NFS shares, and iso Mounts Public with read and write access.
+> + Set to **Yes** to enable SMB Security on SMB shares. Set access by user to allow access and whether or not the user can write to the share.
+> + Set to **Hidden** to enable SMB Security on SMB shares that will not be visible. Set access by user to allow access and whether or not the user can write to the share.
+:end
+
+:ud_settings_force_user_plug:
+> There are times when permissions on SMB shares aren't handled as expected.  Turning this feature on can help with those permissions.
+> This applies to all devices mounted with Unassigned Devices.
+> The down side is that it overrides Linux group permissions.  If you are unsure about whether or not this is necessary, leave it enabled.
+:end
+:ud_settings_case_sensitive_plug:
+> Controls whether filenames are case-sensitive.
+>
+> The default setting of **Auto** allows clients that support case sensitive filenames (Linux CIFSVFS) to tell the Samba server on a per-packet basis that they wish to access the file system in a case-sensitive manner (to support UNIX case sensitive semantics). No Windows system supports case-sensitive filenames so setting this option to auto is the same as setting it to No for them; however, the case of filenames passed by a Windows client will be preserved. This setting can result in reduced performance with very large directories because Samba must do a filename search and match on passed names.
+>
+> A setting of **Yes** means that files are created with the case that the client passes, and only accessible using this same case. This will speed very large directory access, but some Windows applications may not function properly with this setting. For example, if "MyFile" is created but a Windows app attempts to open "MYFILE" (which is permitted in Windows), it will not be found.
+>
+> A value of **Forced lower** is special: the case of all incoming client filenames, not just new filenames, will be set to lower-case. In other words, no matter what mixed case name is created on the Windows side, it will be stored and accessed in all lower-case. This ensures all Windows apps will properly find any file regardless of case, but case will not be preserved in folder listings.
+:end
+
+:ud_settings_force_user_plug:
+> There are times when permissions on SMB shares aren't handled as expected. Turning this feature on can help with those permissions.
+> This applies to all devices mounted with Unassigned Devices.
+> The down side is that it overrides Linux group permissions. If you are unsure about whether or not this is necessary, leave it enabled.
+:end
+
+:ud_settings_nfs_shares_plug:
+> Set to **Yes** to export NFS shares. Shares are exported Public with read and write access or Private with the rule you set. Access is controlled with permission settings on files and folders.
+>
+> **Note:** The normal rule used by UD is '*(sec=sys,rw,insecure,anongid=100,anonuid=99,all_squash)'.
+:end
+
+:ud_settings_disk_pass_plug:
+> Select the disk that you want to set a Password. This is the password for this disk only and does not affect the array password/passphrase. Leave password blank to use the array password/passphrase for luks encrypted disks.
+:end
+
+:ud_settings_change_uuid_plug:
+> Select the disk that you want to change the UUID. This is useful when a XFS formatted disk has been removed from the array and has the same UUID as an array disk. Drive must be unmounted to change the UUID.
+>
+> **Note:** Don't change the UUID of a pooled disk.
+:end

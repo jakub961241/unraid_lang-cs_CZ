@@ -1,0 +1,162 @@
+Configuration=Nastavení
+Colors=Barvy
+Syslog Colors=Barvy systémových záznamů
+Custom Match=Vlastní srovnání
+Custom Syslog Match Strings=Řetězce vlastního srovnání systémových záznamů
+Syslog Filter=Filtr systémových záznamů
+Syslog Configuration=Nastavení systémových záznamů
+Syslog Filter Strings=Řetězce filtru systémových záznamů
+Show All Lines in Log=Zobrazit všechny řádky v záznamu
+Number of Lines to Display=Počet řádek k zobrazení
+Enable Error Highlighting=Povolit zvýrazňování chyb
+Enable Minor Issues Highlighting=Povolit zvýrazňování mírných nedostatků
+Enable Lime Tech Highlighting=Povolit zvýrazňování Limetechu
+Enable Array Highlighting=Povolit zvýrazňování pole
+Enable System Highlighting=Povolit zvýrazňování systému
+Enable File System Highlighting=Povolit zvýrazňování systému souborů
+Enable Drive Related Highlighting=Povolit zvýrazňování souvisejících s disky
+Enable Network Highlighting=Povolit zvýrazňování sítě
+Enable Login Highlighting=Povolit zvýrazňování přihlášení
+Enable emhttp Highlighting=Povolit zvýrazňování emhttp
+Enable Other Highlighting=Povolit zvýrazňování ostatních
+Color Selection Chart=Paleta výběru barvy
+Error Highlight Color=Barva zvýraznění chyby
+Minor Issues Highlight Color=Barva zvýraznění mírných nedostatků
+Lime Tech Highlight Color=Barva zvýraznění Limetechu
+Array Highlight Color=Barva zvýraznění pole
+System Highlight Color=Barva zvýraznění systému
+File System Highlight Color=Barva zvýraznění systému souborů
+Drive Related Highlight Color=Barva zvýraznění disků
+Network Highlight Color=Barva zvýraznění sítě
+Login Highlight Color=Barva zvýraznění přihlášení
+emhttp Highlight Color=Barva zvýraznění emhttp
+Other Highlight Color=Barva zvýraznění ostatních
+;
+; Help
+;
+:enhanced_syslog_show_all_lines_plug:
+> Pro zobrazení všech řádek rozřířeného záznamu nastavte na 'Ano'. Nastavte na 'Ne' pro zobrazení jen zvýrazněných řádek.
+:end
+
+:enhanced_log_number_of_lines_plug:
+> Počet řádků pro zobrazení v rozšířeném Syslogu. Výchozí je 1000.
+:end
+
+:enhanced_log_enable_error_plug:
+> Pro zvýraznění chyb (error) v rozšířených záznamech zvolte 'Ano'.
+:end
+
+:enhanced_log_enable_minor_plug:
+> Pro zvýraznění malých chyb (minor issue) v rozšířených záznamech zvolte 'Ano'.
+:end
+
+:enhanced_log_enable_limetch_plug:
+> Pro zvýraznění Limetechu v rozšířených záznamech zvolte 'Ano'.
+:end
+
+:enhanced_log_enable_array_plug:
+> Pro zvýraznění pole v rozšířených záznamech zvolte 'Ano'.
+:end
+
+:enhanced_log_enable_system_plug:
+> Pro zvýraznění systému v rozšířených záznamech zvolte 'Ano'.
+:end
+
+:enhanced_log_enable_file_system_plug:
+> Pro zvýraznění souborového systému v rozšířených záznamech zvolte 'Ano'.
+:end
+
+:enhanced_log_enable_drive_plug:
+> Pro zvýraznění zpráv souvisejících s disky v rozšířených záznamech zvolte 'Ano'.
+:end
+
+:enhanced_log_enable_network_plug:
+> Pro zvýraznění zpráv souvisejících se sítí v rozšířených záznamech zvolte 'Ano'.
+:end
+
+:enhanced_log_enable_login_plug:
+> Pro zvýraznění přihlášení v rozšířených záznamech zvolte 'Ano'.
+:end
+
+:enhanced_log_enable_emhttp_plug:
+> Pro zvýraznění zpráv souvisejících s emhttp v rozšířených záznamech zvolte 'Ano'.
+:end
+
+:enhanced_log_enable_other_plug:
+> Pro zvýraznění ostatních v rozšířených záznamech zvolte 'Ano'.
+:end
+
+:enhancd_log_default_plug:
+> Zvolte 'Výchozí' pro reset nastavení a barev. Pro uložení klepněte na 'Použít'. Klepněte na 'Hotovo' až dokončíte změny.
+:end
+
+:enhanced_log_color_error_plug:
+> Barva použitá pro zvýraznění chyb (Error). Můžete použít jméno barvy, nebo číslo. Číslo barvy musí začínat znakem '#'.
+:end
+
+:enhanced_log_color_minor_plug:
+> Barva použitá pro zvýraznění malých chyb (minor issue). Můžete použít jméno barvy, nebo číslo. Číslo barvy musí začínat znakem '#'.
+:end
+
+:enhanced_log_color_limetech_plug:
+> Barva použitá pro zvýraznění Limetechu. Můžete použít jméno barvy, nebo číslo. Číslo barvy musí začínat znakem '#'.
+:end
+
+:enhanced_log_color_array_plug:
+> Barva použitá pro pole. Můžete použít jméno barvy, nebo číslo. Číslo barvy musí začínat znakem '#'.
+:end
+
+:enhanced_log_color_system_plug:
+> Barva použitá pro zvýraznění systému. Můžete použít jméno barvy, nebo číslo. Číslo barvy musí začínat znakem '#'.
+:end
+
+:enhanced_log_color_file_system_plug:
+> Barva použitá pro zvýraznění souborového systému. Můžete použít jméno barvy, nebo číslo. Číslo barvy musí začínat znakem '#'.
+:end
+
+:enhanced_log_color_drive_plug:
+> Barva použitá pro zvýraznění zpráv souvisejících s disky. Můžete použít jméno barvy, nebo číslo. Číslo barvy musí začínat znakem '#'.
+:end
+
+:enhanced_log_color_network_plug:
+> Barva použitá pro zvýraznění sítě. Můžete použít jméno barvy, nebo číslo. Číslo barvy musí začínat znakem '#'.
+:end
+
+:enhanced_log_color_login_plug:
+> Barva použitá pro zvýraznění přihlášení. Můžete použít jméno barvy, nebo číslo. Číslo barvy musí začínat znakem '#'.
+:end
+
+:enhanced_log_color_emhttp_plug:
+> Barva použitá pro zvýraznění emhttp. Můžete použít jméno barvy, nebo číslo. Číslo barvy musí začínat znakem '#'.
+:end
+
+:enhanced_log_color_other_plug:
+> Barva použitá pro zvýraznění ostatních. Můžete použít jméno barvy, nebo číslo. Číslo barvy musí začínat znakem '#'.
+:end
+
+:enhanced_log_custom_plug:
+> Enter any custom events you want highlighted in the log.  Any custom events you enter will be processed after the built in events.
+> Události se zadávají jako "vyhledávací řetězec", "událost"
+> Velikost písmen je ve vyhledávacím řetězci ignorována a je možné použít masky.
+> Příklady:
+> "found.*chip" vyhledá řetězec co obsahuje 'found' a 'chip ' a jakýkoliv text mezi tím,
+> "(spinup|spindown)" vyhledá řetězec co buď obsahuje 'spinup', nebo 'spindown'.
+> Vyhledávaný řetězec a udílost jsou v úvozovkách a každý řádek obsahuje jednu kombinaci řetězce a události. Chyby v řetězci mohou vyvolat chyby php.
+> Události jsou: "error", "minor issues", "lime tech", "array", "system", "file system", "drive related", "network", "login", "emhttp", "other".
+:end
+
+:enhanced_log_custom_buttons_plug:
+> Klepněte na **Použít** pro uložení vlastních událostí. Klepněte na **Reset** pro
+> vymazání všech změn provedených před uložením vlastních událostí. Klepněte na **Hotovo** pro opuštění této stránky.
+:end
+
+:enhanced_log_filter_plug:
+> Můžete filtrovat systémové záznamy, abyste nebyli moc zavalení ladícími informacemi, nebo přebytečnými záznamy. Měli byste filtrovat pouze záznamy, o kterých je známo, že jsou nepotřebné, nebo přebytečné.
+> Systémové záznamy jsou velmi důležité pro ladění chyb. Nefiltrujte záznamy, pokud to skutečně nepotřebujete.
+> Zadejte řetězce záznamů které chcete odfiltrovat. Každý záznam je na zvláštní řádce v úvozovkách na začátku i na konci.
+:end
+
+:enhanced_log_filter_buttons_plug:
+> Klepněte na **Použít** pro použití filtru systémových záznamů. Klepněte na **Reset** pro
+> vymazání všech změn provedených před uložením filtru systémových záznamů. Klepněte na **Hotovo** pro opuštění této stránky.
+:end

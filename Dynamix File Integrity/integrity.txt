@@ -1,0 +1,5 @@
+Aborted - export file not found=Přerušeno - soubor exportu nenalezen
+Import=Import
+Build up-to-date=Sestavit současný
+Export up-to-date=Exportovat současný
+Operation aborted=Operace přerušena

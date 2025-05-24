@@ -1,0 +1,125 @@
+Age Days=Dni zastarání
+Array=Pole
+Array is stopped=Pole je zastavené
+Browse the Share Recycle Bin=Procházet koš ve sdílení
+Deleted Files=Smazané soubory
+Deleted Files Log=Záznam smazaných souborů
+Empty=Prázdný
+Empty the=Vysypat
+Empty All Trash=Vysypat koš
+Empty Trash=Vysypat koš
+Enable on Unassigned Devices=Povolit na nepřiřazených zařízeních
+Enable Recycle Bin=Povolit koš
+Excluded Directories=Vynechané složky
+Excluded Files=Vynechané soubory
+Excluded Shares=Vynechaná sdílení
+Log Deleted Files=Zaznamenávat smazané soubory
+Recycle Bin=Koš
+Recycle Bin is empty=Koš je prázdný
+Recycle Bin Log=Záznam koše
+Recycle Bin parameters=Parametry koše
+Recycle Bin permissions=Práva koše
+Recycle Bin Total Size=Celková velikost koše
+Refresh the Recycle Bin page=Obnovit stránku koše
+Remove Aged Files=Odstranit zastaralé soubory
+Remove aged files from the Recycle Bin=Odstranit zastaralé soubory
+Remove Aged Files Notification=Upozornění na odstranění zastaralých souborů
+Remove Aged Files on Schedule=Odstranit zastaralé soubory podle rozvrhu
+Remove all files from the Recycle Bin=Odstranit všechny soubory z koše
+Restart the Recycle Bin=Restartovat Koš
+Share Type=Typ sdílení
+SMB Share=SMB sdílení
+Start the Recycle Bin=Spustit Koš
+Starting and stopping the Recycle Bin can cause SMB shares to go offline for a short period=Spuštění a zastavení koše může způsobit dočasné vypnutí SMB sdílení
+Stop the Recycle Bin=Zastavit Koš
+These actions apply to all shares=Tyto akce se provedou na všech sdíleních
+Trash Size=Velikost koše
+Update Recycle Bin Size in Background=Upravit velikost koše na pozadí
+;
+; Help
+;
+:recycle_bin_shares_plug:
+> Koše sdílení:
+>
+> Sdílení s Košem budou zobrazeny spolu s velikostí koše na sdílení.
+> Klepněte na ikonu <strong>Procházet</strong> pro prozkoumání souborů v koši na sdílení.
+> Klepněte na tlačítko <strong>Vysypat</strong> pro odstranění smazaných souborů.
+>
+> Nepřiřazená zařízení budou zobrazena pouze pokud je Koš povolen na nepřiřazených zařízeních a pokud jsou přítomna nepřiřazená zařízení, který mají něco v koši.
+>
+> Klepněte na sloupec 'SMB sdílení', 'Typ sdílení', nebo 'Velikost koše' v hlavičce tabulky a obsah bude setříděn. 'Velikost koše' je tříděna alfanumericky a ne číselně.
+:end
+
+:recycle_bin_enable_plug:
+> Nastavte na 'Ano' pro povolení funkčnosti koše pro smazané soubory při startu serveru.
+>
+> To hide the Recycle Bin folder, set 'Hide Dot Files to 'Yes' in the SMB settings <a href='/Settings/SMB'>here</a>.
+:end
+
+:recycle_bin_background_plug:
+> Nastavte na 'Ano' pro povolení aktualizace velikosti koše na pozadí každou minutu. Stránky nastavení koše a sdílení budou rychlejší a zabrání se spouštění disků při přístupu ke koši. Koši může trvat přibližně minutu než se aktualizuje, potom co toto povolíte.
+:end
+
+:recycle_bin_ud_plug:
+> Nastavte na 'Ano' pro povolení koše na sdílení na nepřiřazených zařízeních, pokud je nainstalovaný příslušný doplněk. SMB/NFS a iso připojení jsou vyloučena z funkcionality koše na tomto serveru. Pokud je zdrojový server Unraid, povolte funkcionalitu koše na něm.
+:end
+
+:recycle_bin_parameters_plug:
+> Dodatečné parametry koše. Následujícími volbami můžete ovládat souborovou strukturu smazaných souborů.
+> Zadejte parametry do seznamu bez mezer, nebo čárek mezi nimi.
+> Pořadí parametrů bude mít vliv na souborovou strukturu koše.
+> Pokud ponecháte toto pole prázdné, všechny smazané soubory v koši budou bez informací o cestě.
+>
+> Nápověda: Pro lepší kontrolu nad strukturou složek v koši použijte znak '/'.
+> Například '%m/%S' zorganizuje smazané soubory podle názvu počítače, který je smazal a názvu sdílení.
+>
+> + '%S' Název samba sdílení (což v Unraidu znamená název sdílení), např. Storage
+> + '%P' Plná uživatelská cesta sdílení, např. /mnt/user/Storage, /mnt/disk1, /mnt/disks/unassigned_device, /flash
+> + '%u' Uživatelské jméno současné služby, pokud je k dispozici
+> + '%m' Název počítače uživatele, který smazal soubor
+:end
+
+:recycle_bin_permissions_plug:
+> Nastaví práva složky a podsložek koše. Aby koš fungoval správně, nastavte práva koše na 07xx. Pokud nevíte jak fungují práva k souborům, tak toto neměňte.
+:end
+
+:recycle_bin_excluded_files_plug:
+> Čárkami oddělený seznam souborů, které budou vyloučeny z koše. Použití masek '*' a '?' je povolené.
+:end
+
+:recycle_bin_excluded_dirs_plug:
+> Čárkami oddělený seznam složek pro vyloučení z koše. Pro určení konkrétní složky sdílení použijte 'sdílení/složka'. Na nepřiřazených zařízeních probíhá určení stejně - použijte 'přípojný_bod/složka'. Zástupné znaky '*' a '?' jsou v názvu složky povolené.
+:end
+
+:recycle_bin_excluded_shares_plug:
+> Čárkami oddělený seznam sdílení pro vyloučení z koše. Tento seznam může obsahovat sdílení nepřiřazených zařízení. Názvy sdílení rozlišují velikost písmen.
+>
+> Název vyloučených sdílení může obsahovat část názvu sdílení a vyloučí všechna sdílení která obsahují příslušný text ve svém názvu. Pokud chcete použít přesný název, tak ho napište celý.
+>
+> Například: 'Squidbait' (bez úvozovek) vyloučí všechna sdílení vytvořená doplňkem Ransom Ware.
+>
+> Poznámka: Když vyloučíte sdílení, tak smazané soubory pouze nebudou přesouvané do složky .Recycle.Bin. Stávající složka .Recycle.Bin bude stále započítávána v celkové velikosti na záložce 'Sdílení'.
+:end
+
+:recycle_bin_age_day_plug:
+> Všechny soubory starší než uvedený počet dní budou odstraněny podle rozvrhu, nebo po klepnutí na tlačítko 'Odstranit zastaralé soubory'.
+:end
+
+:recycle_bin_remove_age_files_plug:
+> Nastaví žádaný rozvrh odstranění zastaralých souborů. Každou hodinu znamená, že soubory budou odstraňovány každou hodinu. Každý den znamená, že soubory budou odstraňovány každý den ve 3:00 ráno. Každý týden znamená, že soubory budou odstraňovány každou neděli ve 3:00 ráno.
+:end
+
+:recycle_bin_age_files_notification_plug:
+> Pokud je nastaveno na 'Ano', dostanete upozornění, když poběží naplánovaná úloha odstranění souborů.
+:end
+
+:recycle_bin_log_deleted_files_plug:
+> Pokud je nastaveno na 'Ano', smazané soubory se budou zapisovat do záznamů.
+:end
+
+:recycle_bin_show_log_plug:
+> Záznamy koše:
+>
+> Smazané soubory se budou zobrazovat v záznamu jako neodkazované soubory (unlinked).
+> Pro vymazání záznamů klepněte na tlačítko 'Vyčistit'.
+:end

@@ -1,0 +1,8 @@
+Dirty log detected=Zjištěn špinavý záznam
+File system corruption detected=Zjištěno porušení systému souborů
+File system corruption fixed=Porušení systému souborů opraveno
+Force Log Zeroing=Vynutit vynulování záznamů
+No file system corruption detected=Nebylo zjištěno porušení systému
+Note: All metadata updates in progress at the time of the crash will be lost, which may cause significant filesystem damage=Pozn.: Všechny aktualizace metadat co probíhaly v čase pádu budou ztraceny, což může znamenat významné porušení systému souborů
+Run with Correct flag=Spustit s příznakem Opravit
+This should only be used as a last resort if the filesystem cannot be mounted to replay the log=Toto používejte pouze jako poslední možnost pokud se nepodaří připojit systém souborů pro zobrazení záznamů

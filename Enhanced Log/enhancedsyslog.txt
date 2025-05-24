@@ -1,0 +1,4 @@
+Enhanced System Log=Rozšířené systémové záznamy
+Minor Issues=Mírné nedostatky
+File System=Systém souborů
+Drive Related=Související disk

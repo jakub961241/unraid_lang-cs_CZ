@@ -1,0 +1,17 @@
+Halt=Zastavit
+Host Address=Adresa hostitele
+Host=Hostitel
+No active streams=Žádné aktivní proudy
+Playtime=Čas přehrávání
+Stop stream=Zastavit proud
+Stream=Proud
+User Name=Uživatelské jméno
+User=Uživatel
+
+:streams_plug:
+> Pojmenujte si IP adresy, ty se pak budou zobrazovat na stránce aktivních proudů.
+>
+> Nové IP adresy se automaticky přidají do seznamu.
+>
+> Pro odstranění přiřazeného jména vymažte položku uživatelského jména a klepněte na použít.
+:end

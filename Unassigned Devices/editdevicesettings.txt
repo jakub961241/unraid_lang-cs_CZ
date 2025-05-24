@@ -1,0 +1,69 @@
+Automount=Automaticky připojit
+Click the 'Default' button to select the default Device Script File=Pro výběr výchozího skriptu klepněte na tlačítko 'Výchozí' 
+Default=Výchozí
+Delete Device Script File=Smazat soubor skriptu zařízení
+Device Script=Skript zařízení
+Device Script content=Obsah skriptu zařízení
+Disable Mount Button=Zakázat tlačítko připojení
+Disk Name=Název disku
+Edit Device Script=Upravit skript zařízení
+Enter Device Script File Name=Zadejte název souboru skriptu zařízení
+Enter and Edit the Device Script that runs when a udev or operator event occurs=Upravte skript zařízení, který se spustí když nastane událost udev nebo operator
+Enter the User Script that will be using this device=Zadejte skript který použije toto zařízení
+Load the default Device Script=Načíst výchozí skript zařízení
+Run in background=Spustit na pozadí
+Mark this Device as passed through to a VM or Docker=Označit toto zařízení pro průchod do virtuálního stroje nebo do dockeru
+Mount Device Read only=Připojit zařízení pouze ke čtení
+Mount Device when Plugged in or Array is Started=Připojit zařízení při vložení nebo při spuštění pole
+Mount ISO File when Array is Started=Připojit soubor ISO při spuštění pole
+Mount Remote SMB or NFS Share when Array is Started=Připojit vzdálené sdílení SMB nebo NFS při spuštění pole
+Passed Through=Průchod
+Read Only=Pouze pro čtení
+Run Device Script File in the background=Spustit skript zařízení na pozadí
+Save your Device Script File changes=Uložit změny ve skriptu zařízení
+Save=Uložit
+Share Device with SMB and NFS=Sdílet zařízení pomocí SMB a NFS
+Share Remote Mount with SMB and NFS=Sdílet vzdálené sdílení pomocí SMB nebo NFS
+Unassigned Devices Settings=Nastavení nepřiřazených zařízení
+Undo your changes since last Save=Vzít zpět změny od posledního uložení
+User Script=Uživatelský skript
+Volume=Svazek
+;
+; Help
+;
+:ud_edit_script_device_settings_plug:
+> Select the options for this device/mount point. These changes are made immediately. You don't need to click **Save** to save them.
+:end
+
+:ud_disk_name_plug:
+> Enter the alias name for this device.  This is the name you want to use to refer to this drive.  Leave the name blank and the 'devX' will be assigned.
+>
+> **Name:** 8 characters max, spaces converted to '_', minimal special characters allowed, name is case sensitive.
+>
+> **Note:** Cannot contain "dev" as the first characters.  This is reserved for the 'devX' devices.
+:end
+
+:ud_apfs_volume_plug:
+> Enter the volume to mount on this apfs partition. Click **Save** to commit this setting.
+:end
+
+:ud_edit_script_choose_name_plug:
+> This is the Script File that runs when the device is mounted. Choose your Script File name from the file selection dropdown, or enter your desired script.
+:end
+
+:ud_edit_user_script_choose_name_plug:
+> If you have the User Scripts plugin installed, you can have
+Unassigned Devices show the running status of the User Script that
+will be using this device. This field will only be enabled when a Device Script File exists.
+:end
+
+:ud_edit_script_run_background_plug:
+> Set to **Yes** to have the Device Script run as a background task.  This can keep the Unassigned Devices UI from hanging when the script is run from the UI.
+:end
+
+:ud_edit_script_buttons_plug:
+> Click the **Save** button to commit the current edits. Click **Reset** to undo any changes you make (before Saving). Click **Done** to exit this page.
+>
+> Click the **Default** button to initialize the edit box with a Default Device Script.
+> You still need to click **Save** in order to commit the change.
+:end

@@ -1,0 +1,41 @@
+Current date and time=Současné datum a čas
+Hide map=Skrýt mapu
+New date and time=Nové datum a čas
+NTP server=Server NTP
+Show map=Zobrazit mapu
+Time zone=Časové pásmo
+Use NTP=Použít NTP
+
+:timezone_plug:
+> Ze seznamu si vyberte příslušné časové pásmo.
+:end
+
+:datetime_map_plug:
+> Mapa světa zvýrazní vaše vybrané časové pásmo.
+>
+> Myší přejeďte přes mapu a klepněte na zemi pro kterou chcete nastavit časové pásmo. Příslušné časové pásmo se automaticky vybere ze seznamu.
+:end
+
+:use_ntp_plug:
+> Pro použití protokolu Network Time Protocol k udržování přesného času vyberte 'Ano'.
+> **Silně** doporučujeme použít síťový časový verver, obzvláště v případě že plánujete použít Active Directory.
+:end
+
+:ntp_server1_plug:
+> Toto je primární NTP server.  Zadejte doménové jméno nebo IP adresu.
+:end
+
+:ntp_server2_plug:
+> Toto je alternativní NTP server, použije se v případě že server NTP č. 1 je nedostupný.
+:end
+
+:ntp_server3_plug:
+> Toto je alternativní NTP server, použije se v případě že servery NTP č. 1 a 2 jsou nedostupné.
+:end
+
+:ntp_server4_plug:
+> Toto je alternativní NTP server, použije se v případě že servery NTP č. 1, 2 a 3 jsou nedostupné.
+:end
+:current_time_plug:
+> Zadejte současný čas. Použijte formát YYYY-MM-DD HH:MM:SS. Při použití NTP je zašedlé.
+:end

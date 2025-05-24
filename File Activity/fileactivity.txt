@@ -1,0 +1,39 @@
+File Activity=Aktivita souborů
+File Activity Monitoring=Sledování aktivity souborů
+Start File Activity=Spustit aktivitu souborů
+Stop File Activity Monitoring=Zastavit sledování aktivity souborů
+Clear the File Activity log=Vyčistit záznam aktivity souborů
+Refresh log=Obnovit záznam
+Enable File Activity Monitoring=Povolit sledování aktivity souborů
+Enable for Unassigned Devices=Povolit pro nepřiřazená zařízení
+Enable for Cache and Pool Disks=Povolit pro mezipaměť a disky fondů
+;
+; Help
+;
+:file_activity_loggging_plug:
+> Záznamy aktivity souborů:
+>
+> Je monitorována a zaznamenávána aktivita čtení/zápis/změny na poli disků pomocí inotify a je zobrazována podle disku, UD disků a mezipaměti.
+> Pro zaznamenávání musíte spustit Aktivitu souborů.
+> Aktivita souborů je zamýšlena pro spouštění na krátkou dobu pro kontrolu aktivity disku.
+> Server se spoustou souborové aktivity může snadno zaplnit prostor pro záznamy.
+> The 'appdata' and 'Syslogs' directories are excluded.
+>
+> Poznámka: Záznamy aktivity souborů jsou zastaveny, pokud je zastaveno pole.
+:end
+
+:file_activity_enable_logging_plug:
+> Pro povolení záznamů aktivity souborů po startu serveru nastavte na 'Ano'.
+:end
+
+:file_activity_enable_ud_plug:
+> Pro povolení záznamů aktivity souborů pro nepřiřazená zařízení nastavte na 'Ano', pokud je nainstalován doplněk Nepřiřazená zařízení.
+:end
+
+:file_activity_enable_cache_plug:
+	> Pro povolení záznamů aktivity souborů pro fond disků mezipaměti nastavte na 'Ano'. Fond disků je dispozici jen v Unraid 6.9.
+:end
+
+:file_activity_log_by_plug:
+	> Pro zaznamenávání aktivity disku nastavte na **Disk**.  Pro zaznamenávání aktivity sdílení nastavte na **Sdílení**.
+:end

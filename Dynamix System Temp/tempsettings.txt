@@ -1,0 +1,42 @@
+Array fan speed=Rychlost ventilátoru pole
+Available drivers=Ovladače k dispozici
+Click DETECT=Klepněte na ZJISTIT
+Detect=Zjistit
+Load drivers=Načíst ovladače
+Mainboard temperature=Teplota základní desky
+No drivers detected=Nebyly zjištěny žádné ovladače
+Not used=Nepoužito
+Perl must be installed to do automated driver detection=Pro automatické zjištění ovladačů musíte nainstalovat **Perl**
+Processor temperature=Teplota procesoru
+Rescan=Znovu skenovat
+Save=Uložit
+Sensors=Senzory
+Unload drivers=Uvolnit ovladače
+
+:temp_drivers_plug:
+> Použijte 'zjistit' pro vyhledání dostupných ovladačů přes skript 'sensors-detect'. Po zjištění pokračujte uložením seznamu.<br>
+> Použijte 'uložit' pro uložení seznamu ovladačů na disk. Položku  ovladače můžete předtím upravit (např. přidat neuvedený ovladač). Uložení je povinné.<br>
+> Použijte 'načíst ovladače / uvolnit ovladače' pro ruční načtení nebo uvolnění modulů ovladačů.
+:end
+
+:temp_processor_plug:
+> Vyberte jeden z dostupných senzorů jako indikátor teploty procesoru.
+> Výstup z tohoto senzoru je zobrazen na spodku stránky.
+> Vyberte 'Nepoužito' pro potlačení tohoto senzoru.
+:end
+
+:temp_mainboard_plug:
+> Vyberte jeden z dostupných senzorů jako indikátor teploty základní desky.
+> Výstup z tohoto senzoru je zobrazen na spodku stránky.
+> Vyberte 'Nepoužito' pro potlačení tohoto senzoru.
+:end
+
+:temp_fan_plug:
+> Vyberte jeden z dostupných senzorů jako indikátor rychlosti ventilátoru pole.
+> Výstup z tohoto senzoru je zobrazen na spodku stránky.
+> Vyberte 'Nepoužito' pro potlačení tohoto senzoru.
+:end
+
+:temp_rescan_plug:
+> Klepněte na 'Znovu skenovat' pro obnovení seznamu např. při přidání nových ventilátorů.
+:end
