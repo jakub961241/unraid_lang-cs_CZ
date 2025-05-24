@@ -1374,107 +1374,123 @@ To může vést k nedostatku paměti v závislosti na velikosti stromu souborů 
 :end
 
 :shares_enable_disk_help:
-Pokud je nastaveno na **Ne**, nebude exportována žádná sdílená složka jednotlivých disků.
+If set to No, disk shares are unconditionally not exported.
 
-Pokud je nastaveno na **Ano**, budou exportovány diskové sdílené složky.  
-**VAROVÁNÍ:** Nikdy nekopíruj data mezi diskovou a uživatelskou sdílenou složkou, pokud *nevíš přesně*, co děláš.  
-Může dojít ke ztrátě dat – tento postup není podporován.
+If set to Yes, disk shares may be exported.  **WARNING:** Do not copy data from a disk share to a user share
+unless you *know* what you are doing.  This may result in the loss of data and is not supported.
 
-Pokud je nastaveno na **Auto**, budou exportovány pouze ty diskové složky, které nejsou součástí žádné uživatelské sdílené složky.
+If set to Auto, only disk shares not participating in User Shares may be exported.
 :end
 
 :shares_enable_shares_help:
-Pokud je nastaveno na **Ano**, bude aktivována funkce *Uživatelské sdílené složky*.
+If set to 'Yes' the User Shares feature is activated.
 :end
 
 :shares_included_disks_help:
-Toto nastavení určuje seznam disků z pole, které mohou být použity v rámci sdílené složky.  
-Pokud žádný disk nezvolíš, budou použity **všechny** disky pole.
+This setting defines the set of array disks which are *included* in User Shares.
+Unchecking all disks will allow **all** array disks to be included.
 :end
 
 :shares_excluded_disks_help:
-Určuje seznam disků, které mají být z této sdílené složky *vyloučeny*.  
-Nech všechny disky nezaškrtnuté, pokud nechceš vyloučit žádný.
+This setting defines the set of array disk which are *excluded* from User Shares.
+Uncheck all disks in order to not exclude any disks
 
-**Poznámka:** Každá sdílená složka může mít vlastní seznam povolených a vyloučených disků,  
-který doplňuje toto globální nastavení.
+**Note:** Each separate User Share also includes its own set of Included and Excluded
+disks which represent a subset of the Included/Excluded disks defined here.
 :end
 
 :shares_tunable_hard_links_help:
-Pokud nastavíš **Ano**, budou podporovány *hardlinky* (link()).
+If set to Yes then support the link() operation.
 
-Pokud nastavíš **Ne**, hardlinky nebudou podporovány.
+If set to No then hard links are not supported.
 
-Poznámky:
+Notes:
 
-* Při zapnutí mohou některé starší multimediální přehrávače (např. DVD/Blu-ray přes NFS) vykazovat problémy.  
-* Bez ohledu na nastavení bude **Mover** správně zpracovávat všechny nalezené hardlinky.
+* Setting to Yes may cause problems for older media and dvd/bluray players accessing shares using NFS.
+* No matter how this is set, the **mover** will still properly handle any detected hard links.
 :end
 
 :shares_tunable_direct_io_help:
-**Experimentální:** Pokud nastavíš **Ano**, bude souborový systém sdílených složek připojen s volbou FUSE *direct_io*.  
-To může zlepšit rychlost zápisu, ale může zpomalit čtení.
+**Experimental**: If set to Yes then mount User Share file system with FUSE *direct_io* mount option.
+This will increase write performance but might possibly decrease read performance.
 
-Hodnota **Auto** znamená stejné jako **Ne**.
+*Auto* selects No.
 :end
 
 :syslog_local_server_help:
-Server bude fungovat jako systémový logovací server a může přijímat zprávy z jiných zařízení.  
-Může naslouchat na UDP, TCP nebo obojím, a to na specifikovaném portu.
+Let the server act as a central syslog server and collect syslog messages from other systems.
+The server can listen on UDP, TCP or both with a selectable port number.
 
-Logy budou ukládány odděleně podle IP adresy – každé zařízení dostane svůj vlastní log soubor.
+Syslog information is stored per IP address. That is every system gets its own syslog file.
 :end
 
 :syslog_local_folder_help:
-Vyber složku (sdílenou složku), kam se budou ukládat log soubory.  
-Doporučuje se složka umístěná na cache disku, aby se zabránilo spouštění disků pole.
+Select the share folder where the syslogs will be stored.
+It is recommended that you use a share located on the cache drive to prevent array disk spinups.
 :end
 
 :syslog_local_rotation_help:
-Ve výchozím nastavení je rotace logu vypnutá a vytváří se jeden soubor s neomezenou velikostí.
+By default LOG rotation is disabled and will create a single LOG file of unlimited size.
 
-Aktivací rotace můžeš nastavit maximální velikost logu a počet archivovaných verzí.
+Enable LOG rotation to limit the size of the LOG file and specify the number of files to keep in the rotation scheme.
 :end
 
 :syslog_local_file_size_help:
-Nastav maximální velikost jednoho log souboru.  
-Při jejím překročení se provede rotace.
+Specifies the maximum LOG size. When exceeded LOG rotation will occur.
 :end
 
 :syslog_local_file_number_help:
-Určuje počet starších verzí log souborů, které budou uchovány při rotaci.
+Specifies the number of additional LOG files to keep in the rotation scheme.
 :end
 
 :syslog_remote_server_help:
-Zadej název nebo IP adresu vzdáleného systémového log serveru.  
-Na tento server budou odesílány kopie všech systémových log zpráv.
+Enter a name or IP address of a remote syslog server.
+This will send a copy of the syslog messages to the designated server.
 :end
 
 :syslog_mirror_flash_help:
-Toto nastavení je ve výchozím stavu **Ne** a mělo by být používáno s opatrností,  
-aby nedošlo k předčasnému opotřebení USB flash disku.
+This setting is NO by default and must be used with care to avoid unnecessary wear and tear of the USB device.
 
-Přepni na **Ano** pouze pokud je potřeba detailní diagnostika, a není možné získat logy běžným způsobem.  
-Kopie logu se uloží do složky **logs** na USB flash disku.
+Change this setting to YES when troubleshooting is required and it is not possible to get the regular diagnostics information.
+A mirror of the syslog file is stored in the **logs** folder of the flash device.
 :end
 
 :confirm_reboot_help:
-Určuje, zda se má zobrazit potvrzení před restartováním nebo vypnutím serveru.
+Choose if rebooting or powering down the server needs a confirmation checkbox.
 :end
 
 :confirm_array_stop_help:
-Určuje, zda se má zobrazit potvrzení před zastavením pole.
+Choose if stopping the array needs a confirmation checkbox.
 :end
 
 :display_settings_help:
-Toto nastavení ovlivňuje, jak jsou prvky zobrazeny na obrazovce.  
-Lze použít pro úpravu vizuálních efektů dle tvých preferencí.
+The display settings below determine how items are displayed on screen. Use these settings to tweak the visual effects to your likings.
 
-Neboj se experimentovat – tato nastavení ovlivňují pouze vzhled rozhraní.
+You can experiment with these settings as desired, they only affect visual properties.
 :end
 
 :display_font_size_help:
-Toto je zařízení-specifické nastavení.
+Changes the font size in the GUI. This is a per device setting.
+:end
+
+:display_tty_size_help:
+Changes the font size of terminal windows.
+:end
+
+:display_page_view_help:
+Changes how certain pages are displayed. In **Tabbed** mode different sections will be displayed in different tabs,
+while in **Non-tabbed** mode sections are displayed under each other.
+:end
+
+:display_users_menu_help:
+The Users Menu can be part of the header or part of the Settings menu.
+You can move the Users Menu if insufficient space in the header is available to display all menus.
+:end
+
+:display_listing_height_help:
+**Automatic** : long listings are displayed as is, and the user needs to scroll the whole page to see the bottom
+
+**Fixed** : long listings are displayed in a window with a fixed size, user can scroll this window to see the bottom
 :end
 
 :display_wwn_device_id_help:
