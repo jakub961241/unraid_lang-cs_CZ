@@ -1,180 +1,205 @@
-Tips=Tipy
-Tweaks=Triky
-The Tips below are suggestions, workarounds for known problems, and potential fixes=Tipy níže jsou návrhy, obejití známých problémů a potenciální opravy
-It is recommended that you update Unraid to the latest stable version to get the latest features, bug fixes, and security updates=Abyste získali nejnovější funkce, opravy chyb a bezpečnostní aktualizace se doporučuje aktualizovat Unraid na nejnovější stabilní verzi
-Support for older versions of Unraid is being phased out=Podpora pro starší verze Unraidu bude ukončena
-Many plugins are no longer compatible with older Unraid versons=Spousta doplňků už není kompatibilní se staršími verzemi Unraidu
-Install the Fix Common Problems plugin and resolve any Unraid configuration problems=Pro řešení problémů s nastaveními nainstalujte doplněk Oprava běžných problémů
-Use the Update Assistant that is part of the Fix Common Problems plugin=Použijte asistenta pro aktualizaci, který je součástí doplňku Oprava běžných problémů
-This will identify potential problems to be solved before you upgrade the Unraid OS=Tímto určíte potenciální problémy před aktualizací Unraid OS
-Check the=Podívejte se do
-Tips and Tweaks wiki=Wikipédie Tipů a Triků
-for additional ideas on improving your Unraid performance and solving problems=pro další návrhy na zlepšení výkonu a řešení problémů s vaším Unraid serverem
-Some have reported better VM performance with media streaming and gaming VMs with the suggestions on this=Někteří uživatelé hlásili lepší výkon virtuálních strojů pro streamování médií a hraní her při použití doporučení z tohoto
-post=příspěvku
-Some have reported faster and more consistent network performance by making changes in networking parameters on the Tweaks tab of this plugin=Někteří uživatelé hlásili rychlejší a konzistentnější síťový výkon po provedení změn v parametrech sítě na záložce Triky tohoto doplňku
-If you have an Intel Processor, it may appear that all CPUs are constantly running at full speed=Pokud máte procesor od Intelu, může se stát, že všechny procesory běží neustále na plný výkon
-Read this=Přečtěte si tohle 
-for information on the issue=pro další informace o této chybě
-If you set the 'Power Save' CPU Governor, you may see your processors stuck at 800 MHz=Pokud nastavíte regulátor procesoru na 'Úsporu energie', uvidíte, že rychlost procesoru je pouze 800MHz
-It is recommended you use the 'Performance' Governor for best performance and power savings=Pro nejlepší výkon a úsporu energie se doporučuje nastavit regulátor na 'Výkon'
-It is recommended to use the pstate driver on Intel processors if you want the most performance=Pokud chcete nejlepší výkon na procesorech od Intelu, doporučuje se použít ovladač pstate
-Note=Poznámka
-You can check CPU frequencies on the command line with=Frekvence procesoru můžete zkontrolovat pomocí příkazové řádky a příkazu
-The dashboard shows CPU loading and not CPU frequency=Panel zobrazuje zatížení procesoru, ne jeho frekvenci
-If you configure VLANs on Unraid, you should make Unraid the Master Browser=Pokud nastavíte na Unraidu VLANy, měli byste udělat z Unraidu Hlavní prohlížeč
-If you dont Unraid may not detect the Master Browser for all network interfaces correctly=Pokud to neuděláte Unraid nemusí zjistit Hlavní prohlížeč na všech síťových rozhraních správně
-Some people are reporting OOM out of memory errors=Někteří hlásili chyby OOM - došla paměť
-This seems to be occurring more now because of the large amounts of memory being installed in Unraid and the default Disk Cache settings too high=Zdá se, že se to nyní děje častěji kvůli velkému množství paměti instalovanému do Unraid serverů a výchozí nastavení diskové mezipaměti je příliš vysoké
-If you are experiencing OOM errors, try adjusting the Disk Cache settings on the Tweaks page=Pokud dostáváte chyby OOM, zkuste jiné nastavení diskové mezipaměti na stránce Triky
-There is a very cool feature in Unraid 6 and up that can be used to capture your logs and help in troubleshooting a situation where your server locks up or becomes unresponsive=Unraid 6 a novější má skvělou vlastnost, že umí zachytit záznamy a pomoct při řešení problému, když se váš server zasekne
-Go to Settings->Syslog Server and enable the Syslog Server=Přejděte do Nastavení->Server Syslog a povolte Server Syslog
-Put the IP address of your server in the Remote syslog server field=Zadejte IP adresu vašeho serveru do pole Vzdálený server syslog
-This will log all your server log enries to the Syslog Server and save the log to an array share=Tímto uložíte všechny záznamy na server syslog a do sdílení na vašem poli
-After a reboot from a lockup or hung server, you can view the saved log using the Syslog viewer=Po zaseknutí a restartu si můžete prohlédnout záznamy pomocí Prohlížeče Syslog
-The first thing you should do is to install the Fix Common Problems plugin to find and fix common problems=První věc co byste měli provést je nainstalovat doplněk Oprava běžných problémů
-Correct any problems that are identified before doing any tweaking=Opravte objevené problémy před tím než začnete upravovat nastavení
-You may actually cause more problems than you solve if there are problems with your Unraid configuration=Pokud se vyskytnou nějaké problémy s nastavením Unraidu, tak bez potřebných oprav můžete napáchat více škody než užitku
-Make one change at a time and verify if it improves your situation=Provádějte změny po jedné a ověřte že došlo ke zlepšení situace
-Make changes slowly=Provádějte změny pomalu
-Making changes here can briefly interrupt your network operation=Provedením změn zde, dojde ke krátkému přerušení síťového spojení
-Some of the settings will consume RAM and may end up causing Linux to terminate some processes to free up RAM=Některá nastavení spotřebují paměť a můžou způsobit, že Linux ukončí některé procesy pro uvolnění paměti
-Click on Help for more information=Pro více informací klepněte na Nápovědu
-Disable NIC Flow Control=Zakázat řízení toku síťové karty
-Disable NIC Offload=Zakázat offload síťové karty
-Ethernet NIC Rx Buffer=Rx Buffer síťové karty
-Ethernet NIC Tx Buffer=Tx Buffer síťové karty
-Ethernet NICS=Síťové karty
-Dont change the Disk Cache settings until you read and understand this=Neměňte diskovou mezipaměť dokud si nepřečtete toto
-Guide=Průvodce
-Disk Cache=Disková mezipaměť
-Max Watches=Maximum sledování
-CPU Scaling Governor=Regulátor škálování procesoru
-Enable Intel TurboAMD Performance Boost=Povolit Intel Turbo / AMD Performance Boost
-Time to set=Čas pro nastavení
-Enable syslog Archiving=Povolit archivaci syslogů
-Number of syslogs to Archive=Počet syslogů k archivaci
-Processes to kill before Array is Stopped=Procesy k sestřelení před zastavením pole
-Current NIC settings=Současné nastavení síťové karty
-Current Disk Cache Settings=Současné nastavení diskové mezipaměti
-Current Inotify Settings=Současné nastavení Inotify
-CPU Frequency Scaling=Škálování frekvence procesoru
-Flow Control=Řízení toku
-NIC Offload=Offload síťové karty
-NIC Rx Buffer=Rx Buffer síťové karty
-NIC Tx Buffer=Tx Buffer síťové karty
-The feature is not available on any of your NICs=Tato funkce není k dispozici ani na jedné z vašich síťových karet
-Current Disk Cache Settings=Současné nastavení mezipaměti
-Current Inotify Settings=Současné nastavení Inotify
+After a reboot from a lockup or hung server, you can view the saved log using the Syslog viewer=Po restartu po zamrznutí nebo zatuhnutí serveru si můžeš zobrazit uložený log pomocí prohlížeče syslogu
+Check the=Zkontroluj
+Available User Watches=Dostupné sledování uživatele
+Click on Help for more information=Klikni na Nápovědu pro více informací
+Correct any problems that are identified before doing any tweaking=Než začneš cokoliv upravovat, nejprve oprav zjištěné problémy
+Current Disk Cache Settings=Aktuální nastavení cache disku
+Current Inotify Settings=Aktuální nastavení Inotify
+Current NIC settings=Aktuální nastavení síťové karty
+Current User Watches=Aktuální sledování uživatele
+Disable NIC Flow Control=Vypnout řízení toku NIC
+Disable NIC Offload=Vypnout přesměrování zátěže NIC
+Disk Cache=Cache disku
+Dont change the Disk Cache settings until you read and understand this=Než upravíš nastavení cache disku, přečti si toto a ujisti se, že tomu rozumíš
 Driver=Ovladač
-Governor=Regulátor
+Enable Intel TurboAMD Performance Boost=Zapnout Intel Turbo/AMD Performance Boost
+Enable syslog Archiving=Zapnout archivaci systémového logu
+Ethernet NIC Rx Buffer=Ethernet NIC Rx buffer
+Ethernet NIC Tx Buffer=Ethernet NIC Tx buffer
+Ethernet NICS=Ethernetové síťové karty
+Flow Control=Řízení toku
+for additional ideas on improving your Unraid performance and solving problems=pro další tipy ke zlepšení výkonu Unraidu a řešení problémů
+for information on the issue=pro informace o problému
+Go to Settings->Syslog Server and enable the Syslog Server=Jdi do Nastavení->Syslog Server a povol Syslog Server
+Governor=Správce výkonu CPU
+Guide=Průvodce
+If you are experiencing OOM errors, try adjusting the Disk Cache settings on the Tweaks page=Pokud dochází k OOM chybám, zkus upravit nastavení cache disku na stránce Úpravy
+If you configure VLANs on Unraid, you should make Unraid the Master Browser=Pokud nastavíš VLAN v Unraidu, měl bys z Unraidu udělat hlavní prohlížeč
+If you dont Unraid may not detect the Master Browser for all network interfaces correctly=Pokud to neuděláš, Unraid nemusí správně detekovat hlavní prohlížeč na všech síťových rozhraních
+If you have an Intel Processor, it may appear that all CPUs are constantly running at full speed=Pokud máš procesor Intel, může se zdát, že všechny CPU běží stále na plný výkon
+If you set the 'Power Save' CPU Governor, you may see your processors stuck at 800 MHz=Pokud nastavíš správce CPU na „Úspora energie“, můžeš vidět, že CPU běží pouze na 800 MHz
+Install the Fix Common Problems plugin and resolve any Unraid configuration problems=Nainstaluj plugin „Fix Common Problems“ a vyřeš případné problémy s konfigurací Unraid
+Intel TurboAMD Performance Boost=Intel Turbo/AMD Performance Boost
+It is recommended that you update Unraid to the latest stable version to get the latest features, bug fixes, and security updates=Doporučuje se aktualizovat Unraid na nejnovější stabilní verzi kvůli novým funkcím, opravám a bezpečnostním aktualizacím
+It is recommended to use the pstate driver on Intel processors if you want the most performance=Pro maximální výkon se doporučuje používat ovladač pstate na procesorech Intel
+It is recommended you use the 'Performance' Governor for best performance and power savings=Pro nejlepší výkon a úsporu energie se doporučuje použít správce „Výkon“
+Make changes slowly=Prováděj změny postupně
+Make one change at a time and verify if it improves your situation=Prováděj změny jednu po druhé a ověřuj, zda zlepšují situaci
+Making changes here can briefly interrupt your network operation=Změny zde mohou krátce přerušit provoz sítě
+Many plugins are no longer compatible with older Unraid versons=Mnoho pluginů již není kompatibilních se staršími verzemi Unraid
+Max SMB Open Files=Maximální počet otevřených SMB souborů
+Max User Instances=Maximální počet instancí uživatele
+Max User Watches=Maximální počet sledovaných událostí uživatele
+NIC Offload=NIC Offload
+NIC Rx Buffer=NIC Rx buffer
+NIC Tx Buffer=NIC Tx buffer
+Normal CPU Scaling Governor=Normální škálovací správce CPU
+Note=Poznámka
+Number of syslogs to Archive=Počet systémových logů k archivaci
+post=Odeslat
+Power Saving Settings=Nastavení úspory energie
+Power Saving CPU Scaling Governor=Úsporný správce škálování CPU
+Processes to kill before Array is Stopped=Procesy k ukončení před zastavením pole
+Put the IP address of your server in the Remote syslog server field=Zadej IP adresu svého serveru do pole pro vzdálený syslog server
+Read this=Přečti si toto
+Schedule CPU Power Saving Mode=Naplánuj režim úspory energie CPU
+Some have reported better VM performance with media streaming and gaming VMs with the suggestions on this=Někteří uživatelé hlásí lepší výkon VM při streamování médií a hrách pomocí těchto nastavení
+Some have reported faster and more consistent network performance by making changes in networking parameters on the Tweaks tab of this plugin=Někteří uživatelé hlásí rychlejší a stabilnější síťový výkon po úpravách parametrů sítě v záložce Úpravy tohoto pluginu
+Some of the settings will consume RAM and may end up causing Linux to terminate some processes to free up RAM=Některá nastavení spotřebují RAM a mohou způsobit, že Linux ukončí některé procesy, aby uvolnil paměť
+Some people are reporting OOM out of memory errors=Někteří lidé hlásí chyby OOM (nedostatek paměti)
+Support for older versions of Unraid is being phased out=Podpora starších verzí Unraidu je postupně ukončována
+The dashboard shows CPU loading and not CPU frequency=Dashboard zobrazuje vytížení CPU, nikoliv jeho frekvenci
+The feature is not available on any of your NICs=Tato funkce není dostupná na žádné z tvých síťových karet
+The first thing you should do is to install the Fix Common Problems plugin to find and fix common problems=Prvním krokem by mělo být nainstalování pluginu „Fix Common Problems“ pro nalezení a opravu běžných problémů
+The Tips below are suggestions, workarounds for known problems, and potential fixes=Následující tipy jsou návrhy, řešení známých problémů a možné opravy
+There is a very cool feature in Unraid 6 and up that can be used to capture your logs and help in troubleshooting a situation where your server locks up or becomes unresponsive=V Unraid 6 a novějších je skvělá funkce pro záznam logů, která pomáhá při řešení zamrznutí nebo nereagujícího serveru
+This will identify potential problems to be solved before you upgrade the Unraid OS=Tímto se zjistí možné problémy, které je třeba vyřešit před aktualizací systému Unraid
+This will log all your server log enries to the Syslog Server and save the log to an array share=Tímto se všechny logy serveru odešlou na Syslog Server a uloží na sdílenou složku pole
+This seems to be occurring more now because of the large amounts of memory being installed in Unraid and the default Disk Cache settings too high=To se nyní objevuje častěji kvůli většímu množství RAM v Unraidu a příliš vysokým výchozím hodnotám cache disku
+Time to set Normal CPU Scaling=Čas nastavit normální škálování CPU
+Time to set Power Saving CPU Scaling=Čas nastavit úsporné škálování CPU
+Time to set TurboPerformance Boost Off=Čas vypnout Turbo/Performance Boost
+Time to set TurboPerformance Boost On=Čas zapnout Turbo/Performance Boost
+Tips=Tipy
+Tips and Tweaks wiki=Wiki Tipy a úpravy
+Tweaks=Úpravy
+Use the Update Assistant that is part of the Fix Common Problems plugin=Použij aktualizačního asistenta, který je součástí pluginu „Fix Common Problems“
+Version 6.11.4 and later=Verze 6.11.4 a novější
+You can check CPU frequencies on the command line with=Frekvenci CPU lze zkontrolovat v příkazové řádce pomocí
+You may actually cause more problems than you solve if there are problems with your Unraid configuration=Můžeš způsobit více problémů, než vyřešíš, pokud máš chyby v konfiguraci Unraidu
 ;
 ; Help
 ;
 :tips_tweaks_general_plug:
-> Some General Recommendations:
+> Několik obecných doporučení:
 >
-> + Use of a static IP address can help in certain cases.  NFS shares are referenced by IP address.  Be sure you reserve the IP address on your router, or set a very high IP address to prevent conflicts.
-> + Use of Jumbo Frames is discouraged.  Jumbo Frames have been known to cause issues with some Dockers.
-> + Don't set vm.dirty.ratio above 20% unless you have a UPS backup for your Unraid.  You may lose data that has not been written to disk on a power failure.
-> + A value of vm.dirty_background_ratio over 1/2 of vm.dirty_ratio is not recommended unless using single digits for both values.
+> + Použití statické IP adresy může být užitečné v určitých případech. NFS sdílení jsou připojována pomocí IP. Ujisti se, že máš IP rezervovanou v routeru nebo nastav vysokou adresu, aby nedošlo ke kolizi.
+> + Použití Jumbo rámců se nedoporučuje. Jsou známy problémy s některými Docker kontejnery.
+> + Nenastavuj vm.dirty.ratio vyšší než 20 %, pokud nemáš UPS. V případě výpadku napájení můžeš přijít o data, která ještě nebyla zapsána.
+> + vm.dirty_background_ratio by nemělo být vyšší než polovina vm.dirty_ratio – pokud ano, používej malé jednociferné hodnoty.
 :end
 
 :tips_tweaks_nic_flow_control_plug:
-> Set to 'Yes' to disable NIC Flow Control.  NIC Flow Control was originally implemented to help in
-> networks with mixed speed devices.  It doesn't seem to be as necessary on today's networks.  If you
-> have a managed switch, flow control can generally be turned on and off on the switch.  If you have
-> a consumer grade switch, you won't have that level of control.  Flow Control has been known to create
-> network issues in certain circumstances.  It is recommended to disable Flow Control if you experience network issues.
->
-> Changing from any setting to 'Default' requires a reboot.
+> Nastav na **Ano**, pokud chceš deaktivovat řízení toku (Flow Control) u síťové karty. V dnešních sítích to většinou není potřeba a může to způsobovat problémy.
 :end
 
 :tips_tweaks_nic_offload_plug:
-> Set to 'Yes' to disable NIC offloads.  Offloads were developed to offload some network processing
-> to the NIC and off the main CPU and deal with large packets.  This was intended to save some CPU processing
-> load and increase network throughput.  TSO offload has been known to cause network issues in certain circumstances.
-> It is recommended to disable NIC Offloads if you experience network issues.
->
-> Changing from any setting to 'Default' requires a reboot.
+> Nastav na **Ano**, pokud chceš deaktivovat NIC offload. Tato funkce může způsobovat problémy s přenosem dat, zejména TSO offload. Vypni, pokud zaznamenáš síťové problémy.
 :end
 
 :tips_tweaks_rx_buffer_plug:
-> Select the size of the NIC Rx ring buffer.  Some NICs have a limit on the size of the Rx ring buffer.  The default value of 256 is recommended.
->
-> Changing from any setting to 'Default' requires a reboot.
+> Nastav velikost přijímacího (Rx) bufferu síťové karty. Některé NIC mají limit, výchozí hodnota 256 je doporučená.
 :end
 
 :tips_tweaks_tx_buffer_plug:
-> Select the size of the NIC Tx ring buffer.  Some NICs have a limit on the size of the Tx ring buffer.  The default value of 256 is recommended.
->
-> Changing from any setting to 'Default' requires a reboot.
+> Nastav velikost vysílacího (Tx) bufferu síťové karty. Výchozí hodnota 256 je doporučená.
 :end
 
 :tips_tweaks_nics_plug:
-> List the NICs to apply the above settings separated by commas.  If you have multiple NICs that are bonded, be sure to include all of them.  Flow Control, TSO, and NIC buffer settings will
-> be applied to these NICs.
+> Uveď síťové karty (oddělené čárkou), na které se mají výše uvedená nastavení aplikovat. Pokud máš více NIC v bondingu, uveď je všechny.
 :end
 
 :tips_tweaks_dirty_background_plug:
-> For streaming and gaming VMs, set the values low in the single digits.  Recommended values are: vm.dirty_background_ratio=2% and vm.dirty_ratio=3%.
-> If you have large amounts of RAM, smaller is better.
-> Caution: Don't increase these values beyond the default settings unless you have a UPS that will reliably shut down Unraid.
->
-> Set the 'vm.dirty_background_ratio' as a percentage of total RAM memory.
-> The default setting of 10% is recommended in most cases.  If you have a media streaming or gaming VM, use a value of 2%.  If you experience OOM errors, it is recommended you set this to 1%.
+> Pro streaming nebo herní VM se doporučují nízké hodnoty, např. dirty_background_ratio=2 % a dirty_ratio=3 %. Pokud máš hodně RAM, nižší hodnoty jsou lepší. Výchozí hodnota 10 % je pro většinu uživatelů v pořádku.
 :end
 
 :tips_tweaks_dirty_ratio_plug:
-> Set the 'vm.dirty_ratio' as a percentage of total RAM memory.
-> Setting this too high may cause Linux to terminate some processes to gain more memory.  The default setting of 20% is recommended in most cases.  If you have a media streaming or gaming VM, use a value of 3%.  If you experience OOM errors, it is recommended you set this to 2%.
+> Nastav vm.dirty_ratio jako procento z celkové RAM. Vyšší hodnoty mohou způsobit OOM chyby. Výchozí je 20 %, doporučuje se 3 % pro herní/streamovací VM nebo 2 % pokud máš OOM chyby.
+:end
+
+:tips_tweaks_writeback_plug:
+> Výchozí hodnota je 200 centisekund (2 sekundy) – určuje frekvenci, s jakou kernel zapisuje špinavá data na disk.
+:end
+
+:tips_tweaks_expire_plug:
+> Výchozí hodnota je 1000 centisekund (10 sekund) – určuje, jak dlouho mohou data zůstat „špinavá“ před zápisem.
 :end
 
 :tips_tweaks_max_watches_plug:
-> If inotify fails to start because there are not enough user watches, increase the max_user_watches.
->
-> The default is 524288.
+> Pokud nejde spustit inotify kvůli nedostatku watch slotů, zvyšte hodnotu max_user_watches. Výchozí hodnota: 524288.
 :end
 
-:tips_tweaks_cpu_governor_plug:
-> Select the CPU Scaling Governor you want to use.
->
-> + "Power Save" - Default for the Intel Pstate driver.  Scales CPU frequency based on load.
-> + "On Demand" - Default for ACPI CPU Freq driver.  Scales CPU frequency based on load.  Frequency stepping is aggressive.
-> + "Conservative" - Scales CPU frequency based on load.  Frequency stepping is gentler.  Can cause some latency.
-> + "Performance" - Set all CPUs at full frequency regardless of load.  This can have a positive influence on performance and latency.
-> + "Schedutil" - Set all CPUs frequency scaling to schedutil.  This sets CPU frequency based on the Linux scheduler.  Note: This is still in development.
-> + "Scheduled" - At start time set governor to "Performance".  At stop time set governor to "Powersave" or "On Demand" depending on driver used.
->
-> You can now set the CPU governor with the rc.tweaks script.  Use the command:
-> /usr/local/sbin/rc.tweaks set_governor 'governor'
-> The 'governor' choices are: 'ondemand', 'performance', 'powersave', 'conservative', and 'schedutil'.
+:tips_tweaks_max_instances_plug:
+> Maximální počet inotify instancí, které může vytvořit jeden uživatel. Výchozí hodnota: 128.
+:end
+
+:tips_tweaks_max_files_plug:
+> Určuje maximální počet současně otevřených souborů přes SMB. Výchozí hodnota: 40960 (rozsah až 65535).
 :end
 
 :tips_tweak_turbo_plug:
-> Set to 'Yes' to enable the Intel Turbo or AMD Performance Boost Mode.
+> Nastav na **Ano**, pokud chceš povolit Intel Turbo nebo AMD Performance Boost.
 :end
 
-:tips_tweaks_performance_plug:
-> Enter the time you want to set the governor to "Performance" in 24 hour format hh:mm.
+:tips_tweaks_turbo_state_off_plug:
+> Zadej čas ve formátu hh:mm (24hod), kdy se má Turbo/Boost vypnout.
+:end
+
+:tips_tweaks_turbo_state_on_plug:
+> Zadej čas ve formátu hh:mm (24hod), kdy se má Turbo/Boost zapnout.
+:end
+
+:tips_tweaks_cpu_governor_plug:
+> Vyber požadovaný CPU Governor:
+>
+> + Power Save – šetří energii, snižuje výkon.
+> + On Demand – standardní, agresivní přepínání frekvence.
+> + Conservative – mírné škálování, plynulé, vyšší latence.
+> + Performance – maximální výkon, CPU běží stále na maximum.
+> + Scheduled – přepíná mezi Performance (při zapnutí) a PowerSave/On Demand (při vypnutí).
+>
+> Lze také nastavit ručně příkazem:
+> `/usr/local/sbin/rc.tweaks set_governor 'governor'`
+> Možnosti: ondemand, performance, powersave, conservative.
+:end
+
+
+:tips_tweaks_power_save_cpu_governor_plug:
+> Vyber správce (governor) pro úsporné škálování CPU, který chceš používat.
+>
+> + "Power Save" – Škáluje frekvenci CPU podle zátěže.
+> + "On Demand" – Výchozí pro ovladač ACPI CPU Freq. Agresivně přepíná frekvence podle zátěže.
+> + "Conservative" – Škálování podle zátěže s plynulejším přechodem. Může způsobit mírnou latenci.
+> + "Schedutil" – Nastaví škálování CPU podle Linux plánovače. Poznámka: Tato funkce je stále ve vývoji.
+:end
+
+:tips_tweak_turbo_plug:
+> Nastav na **Ano**, pokud chceš povolit Intel Turbo nebo AMD Performance Boost.
+:end
+
+:tips_tweaks_scheduled_plug:
+> Nastav na **Ano**, pokud chceš naplánovat přepínání mezi úsporným a výkonnostním režimem CPU podle časů zadaných níže.
 :end
 
 :tips_tweaks_cpu_state_plug:
-> Enter the time you want to set the governor to "Power Save" for Intel Pstate and Intel CPU Freq or "On Demand" in 24 hour format hh:mm.
+> Zadej čas (ve formátu hh:mm), kdy se má CPU přepnout do režimu "Power Save" (u Intel Pstate) nebo "On Demand".
+:end
+
+:tips_tweaks_performance_plug:
+> Zadej čas (ve formátu hh:mm), kdy se má CPU přepnout do režimu "Performance".
 :end
 
 :tips_tweaks_syslog_archive_plug:
-> Set to 'Yes' to enable the capture and archive of syslogs and run a diagnostics on shutdown.  Logs and diagnostics are saved to /boot/logs/.
+> Nastav na **Ano**, pokud chceš zapnout archivaci systémových protokolů a provést diagnostiku při vypnutí. Protokoly a výstupy budou uloženy v `/boot/logs/`.
 :end
 
 :tips_tweaks_number_syslogs_plug:
-> Set the number of syslogs to save in the archive.
-> Set zero to save only last syslog.  Set to -1 to save all logs.  Default setting is 10.
+> Nastav počet systémových protokolů, které se mají uchovávat v archivu.
+> Zadej `0` pro uložení pouze posledního protokolu, `-1` pro uchování všech. Výchozí hodnota je `10`.
 :end
 
 :tips_tweaks_kill_processes_plug:
-> Enter the names of processes to kill before stopping the array, separated by commas.  For example, 'ssh' and 'bash'.  These processes can keep the array disks from unmounting causing Unraid to hang when the array is being stopped.
+> Zadej názvy procesů, které mají být ukončeny před zastavením arraye – oddělené čárkami. Např. `ssh`, `bash`. Tyto procesy mohou bránit odpojení disků a způsobit, že se Unraid při zastavení zasekne.
 >
-> Note: Be careful with the processes you kill here.  You could lose data!
+> **Poznámka:** Buď opatrný při ukončování procesů – hrozí ztráta dat!
 :end
-
