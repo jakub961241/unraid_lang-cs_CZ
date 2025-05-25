@@ -37,81 +37,81 @@ Wait for user login inactivity=Počkat na neaktivitu přihlášení uživatelů
 Yes, exclude Cache=Ano, vyloučit mezipaměť
 
 :s3sleep_function_plug:
-> Select the mode of operation. The system can be either put to sleep (and wake-up) or completely shutdown.
+> Zvolte režim činnosti. Systém může být buď uspán (a následně probuzen), nebo zcela vypnut.
 >
-> The next settings determine the conditions under which the system will be put to sleep or shutdown.
+> Následující nastavení určují podmínky, za kterých dojde k uspání nebo vypnutí systému.
 :end
 
 :s3sleep_excluded_days_plug:
-> By default all days are included, select here the days that sleep or shutdown is not effective. This setting works in combination with excluded hours.
+> Ve výchozím nastavení jsou zohledněny všechny dny. Zde vyberte dny, ve kterých se nemá uspání nebo vypnutí provádět. Toto nastavení funguje v kombinaci s vyloučenými hodinami.
 :end
 
 :s3sleep_excluded_hours_plug:
-> By default all hours are included, select here the hours that sleep or shutdown is not effective. This setting works in combination with excluded days.
+> Ve výchozím nastavení jsou zohledněny všechny hodiny. Zde vyberte hodiny, ve kterých se nemá uspání nebo vypnutí provádět. Toto nastavení funguje v kombinaci s vyloučenými dny.
 :end
 
 :s3sleep_inactivity_plug:
-> Select whether the array must be completely inactive (all disks are spun down) before sleep or shutdown can take place.
+> Zvolte, zda musí být pole zcela nečinné (všechny disky jsou vypnuté), než dojde k uspání nebo vypnutí systému.
 >
-> The Cache disk can be included or excluded in this setting, e.g. when the Cache disk is used continuously and never spins down.
+> Cache disky lze z této podmínky vyloučit nebo je do ní zahrnout – např. pokud jsou cache disky trvale používány a nikdy se nevypínají.
 :end
 
 :s3sleep_activity_plug:
-> *Status* monitors the hardware status of the device
+> *Status* sleduje hardwarový stav disku  
 >
-> *Counters* monitors the read/write counters of the device
+> *Počítadlo* sleduje počty čtení/zápisu disku
 :end
 
 :s3sleep_outside_plug:
-> If there any other disks present outside the array, then these can be monitored separately.
+> Pokud jsou v systému přítomny disky mimo pole, lze je sledovat samostatně.
 :end
 
 :s3sleep_extra_delay_plug:
-> Specify an additional delay after the array has become inactive. Value may be 0 for no delay.
+> Nastavte dodatečné zpoždění poté, co pole přejde do nečinnosti. Hodnota 0 znamená žádné zpoždění.
 :end
 
 :s3sleep_network_plug:
-> Select whether network activity must be taken as a condition before going to sleep or shutdown.
+> Určete, zda se má při rozhodování o uspání nebo vypnutí zohlednit i síťová aktivita.
 :end
 
 :s3sleep_ethernet_plug:
-> In case of multiple network interfaces, select here the interface to use for checking the network activity.
+> Pokud je k dispozici více síťových rozhraní, vyberte to, které má být použito pro sledování síťové aktivity.
 :end
 
 :s3sleep_idle_plug:
-> Network activity is measured under different thresholds. Ranging from completely silent to megabit traffic. Experiment with this setting to find to right balance for your situation.
+> Síťová aktivita je hodnocena pomocí různých prahových hodnot – od úplného klidu až po přenos v megabitech. Vyzkoušejte různé hodnoty, abyste našli vhodnou rovnováhu.
 :end
 
 :s3sleep_host_plug:
-> Select whether external hosts need to be monitored and non-responding as a sleep or shutdown condition.
+> Určete, zda mají být sledováni externí hosté, a zda jejich nedostupnost může být důvodem pro uspání nebo vypnutí systému.
 >
-> External hosts are given by their IP address, use a comma to separate multiple IP addresses. As long as one of the external hosts responds to a ping then sleep/shutdown won't be invoked.
+> Externí hosté jsou definováni podle IP adresy. Více IP adres oddělujte čárkou. Pokud alespoň jeden host odpovídá na ping, k uspání/vypnutí nedojde.
 :end
 
 :s3sleep_login_plug:
-> Select whether local (console) or remote (telnet or ssh) logged in users need to log out first before sleep or shutdown can proceed.
+> Určete, zda musí být nejprve odhlášeni přihlášení uživatelé (lokálně přes konzoli nebo vzdáleně přes Telnet/SSH), než dojde k uspání nebo vypnutí systému.
 :end
 
 :s3sleep_wol_plug:
-> Set additional WOL options for proper support of S3 sleep. Refer to your system documentation for possibilities.
+> Zadejte dodatečné WOL (Wake-on-LAN) parametry pro správnou podporu S3 režimu spánku. Možnosti závisí na vaší hardwarové konfiguraci a najdete je v dokumentaci systému.
 :end
 
 :s3sleep_before_plug:
-> Any extra commands before sleep or shutdown is invoked can be placed here. This maybe cleanup or other desirable actions.
+> Sem můžete zadat příkazy, které se mají provést před uspáním nebo vypnutím systému. Lze použít pro úklid nebo přípravu systémového stavu.
 :end
 
 :s3sleep_after_plug:
-> Any extra commands after wake-up of sleep can be placed here. This might be helpful for restoring a previous situation.
+> Sem můžete zadat příkazy, které se mají provést po probuzení systému ze spánku. Může být užitečné pro obnovení předchozího stavu.
 :end
 
 :s3sleep_gigabit_plug:
-> Leave this default OFF, in case the interface doesn't start properly after wake-up, see if forcing this setting helps.
+> Nechte tuto možnost vypnutou, pokud síťové rozhraní nefunguje správně po probuzení. Vyzkoušejte aktivaci této volby, pokud máte potíže.
 :end
 
 :s3sleep_dhcp_plug:
-> Leave this default OFF, in case the system doesn't start properly after wake-up, see if forcing this setting helps.
+> Nechte tuto možnost vypnutou, pokud systém po probuzení nefunguje správně. Vyzkoušejte aktivaci této volby, pokud narazíte na potíže.
 :end
 
 :s3sleep_debug_plug:
-> By default debug is OFF. Use this setting only in case of troubleshooting, it will generate additional messages to report the various stages within the s3_sleep script.
+> Ve výchozím nastavení je ladicí režim vypnutý. Aktivujte jej pouze při řešení problémů – generuje podrobné zprávy o průběhu s3_sleep skriptu.
 :end

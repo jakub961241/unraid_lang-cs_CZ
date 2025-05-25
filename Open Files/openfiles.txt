@@ -1,16 +1,18 @@
-Process=Program
-Kill Process=Sestřelit proces
+Enable Kill Button=Aktivovat tlačítko „Ukončit“
+Process=Proces
+Kill Process=Ukončit proces
+Kill this Process holding files open=Ukončit tento proces, který drží soubory otevřené
 Process ID=ID procesu
-Open Files=Otevřené soubory
-Files that may prevent shutdown=Soubory které mohou bránit vypnutí
-File Name and Path=Název a cesta k souboru
-An entry for bash means you have a terminal session open with the working directory on the array=Záznam bash znamená, že běží sezení terminálu s otevřenou pracovní složkou na poli
-If smbd is listed, it means that another computer has a samba share mounted=Pokud je uvedené smbd, znamená to, že jiný počítač má připojené samba sdílení
-Files open by Samba usually wont prevent array shutdown=Soubory otevřené přes Sambu obvykle nebrání vypnutí pole.
+Open=Otevřít
+May prevent shutdown=Může zabránit vypnutí
+File Name and Path=Název a cesta souboru
+An entry for bash means you have a terminal session open with the working directory on the array=Záznam „bash“ znamená, že máte otevřenou terminálovou relaci s pracovním adresářem v rámci pole
+If smbd is listed, it means that another computer has a samba share mounted=Záznam „smbd“ znamená, že jiný počítač má připojenou Samba sdílenou složku
+Files open by Samba usually wont prevent array shutdown=Soubor otevřený přes Samby obvykle nebrání vypnutí pole
 No open files=Žádné otevřené soubory
-Kill=Sestřelit
-Command timed out=Příkaz vypršel
-Cannot get list of open files=Nemohu získat seznam otevřených souborů
+Kill=Ukončit
+Command timed out=Časový limit příkazu vypršel
+Cannot get list of open files=Nelze načíst seznam otevřených souborů
 ;
 ; Help
 ;
