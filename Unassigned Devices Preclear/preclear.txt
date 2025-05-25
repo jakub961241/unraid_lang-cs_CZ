@@ -1,0 +1,79 @@
+A disk must be cleared of all partitions before it can be precleared=Disk musí být zbaven všech oddílů, než může být použit pro Preclear
+Cannot Preclear=Preclear není možný
+Clear Disk=Vymazat disk
+Clear Signature=Vymazat signaturu
+Clear Stats=Vymazat statistiky
+Click to show reports=Klikni pro zobrazení zpráv
+Concurrent Sessions=Současné relace
+Cycles=Cyklus
+Device Model=Model zařízení
+Disk Log Information=Informace z logu disku
+Disk Size=Velikost disku
+Download Logs=Stáhnout protokoly
+Enable Testing for debugging=Povolit testování pro ladění
+Fast Post-read=Rychlé Post-Read
+Firmware=Firmware
+Fix Preclear=Opravit Preclear
+Identification=Identifikace
+If you set a queue limit, all running preclear sessions above that limit will be paused and remain in the queue until a session finishes=Pokud nastavíš limit fronty, všechny běžící relace Preclear nad tímto limitem budou pozastaveny a zůstanou ve frontě, dokud jedna relace neskončí
+Notifications=Upozornění
+On every cycle and step end=Na konci každého cyklu a kroku
+On every 25% of progress=Při každém postupu o 25 %
+On every cycle end=Na konci každého cyklu
+On preclear end=Na konci Preclear
+Operation=Operace
+Post-read Verify=Ověření po čtení
+Preclear Disks=Preclear disky
+Preclear Disk Log=Preclear log disku
+Preclear Log=Preclear protokol
+Preclear Status=Stav Preclear
+Preview Progress=Náhled průběhu
+Read size=Velikost čtení
+Remove Report=Odstranit zprávu
+Resume all Sessions=Obnovit všechny relace
+Resume Preclear=Obnovit Preclear
+Preview Progress Report=Náhled zprávy o průběhu
+Select Disks=Vybrat disky
+Serial Number=Sériové číslo
+Set Preclear Queue=Nastavit frontu Preclear
+Show Preclear Report=Zobrazit Preclear zprávu
+Skip Pre-read=Přeskočit Pre-Read
+Skip Post-Read=Přeskočit Post-Read
+Start Multiple Sessions=Spustit více relací
+Start New=Spustit novou
+Start Preclear=Spustit Preclear
+Stop all Sessions=Zastavit všechny relace
+Stop Preclear=Zastavit Preclear
+Temp=Teplota
+Testing=Testování
+There are no disks that can be precleared=Nejsou k dispozici žádné disky, které lze Preclearovat
+Verify Signature=Ověřit signaturu
+Write size=Velikost zápisu
+You can use Unassigned Devices to clear the disk=K vymazání disku můžeš použít Unassigned Devices
+
+:preclear_general_help_plug:
+> Unassigned Devices Preclear lze použít k přípravě disků pro přidání do pole, k bezpečnému vymazání disků určených k likvidaci nebo ke stresovým testům před jejich použitím v poli.
+>
+> Pouze disky, které nejsou používány v poli a neobsahují žádné oddíly se souborovým systémem, se zobrazí jako kandidáti pro proces Preclear.
+>
+> Pokud je na disku spuštěn proces Preclear, můžeš jeho stav sledovat na této stránce, na stránce Unassigned Devices nebo pomocí ikony stavu Preclear ve spodní části webového rozhraní Unraid.
+> 
+> Existuje několik způsobů provedení procesu Preclear:
+>
+> **Rozšířený** skript od uživatele **gfjardim** podporuje pokročilé funkce jako pozastavení a obnovení procesu Preclear. Také poskytuje podrobné protokolování.
+>
+> **Docker** je binhex Docker kontejner, který provádí proces Preclear. Výhodou je, že Preclear probíhá izolovaně uvnitř Docker kontejneru.
+>
+> Typy operací Preclear:
+>
+> + Vymazání disku (Clear Disk) – Disk bude vymazán a bude na něj zapsána Unraid signatura. Vytvoří se prázdný oddíl.
+> + Přepsání disku (Erase Disk) – Celý disk bude přepsán nulami. Signatura Preclear bude odstraněna.
+> + Přepsání a vymazání disku (Erase and Clear Disk) – Nejprve se na disk zapíše náhodný vzor a poté se celý přepíše nulami. Ideální pro disky určené k likvidaci, aby se zajistilo, že veškerá data budou nenávratně odstraněna.
+> + Ověření signatury (Verify Signature) – Ověří signaturu disku.
+> + Ověření disku (Verify Disk) – Ověří signaturu i přepsání disku nulami.
+> + Post-read ověření (Post-read Verify) – Provede ověření po čtení, aby se ověřila integrita dat na disku.
+> + Odstranění signatury (Clear Signature) – Odstraní signaturu Preclear z disku.
+>
+> Text <em style='color:#00BE37;'>Precleared</em> zobrazený vedle sériového čísla disku znamená, že disk má platnou Preclear signaturu. Zobrazí se pouze tehdy, pokud byl proces Preclear dokončen a statistiky Preclear byly odstraněny.
+:end
+

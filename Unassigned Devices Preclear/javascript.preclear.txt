@@ -1,0 +1,23 @@
+Do you want to pause all running preclear sessions=Chceš pozastavit všechny probíhající Preclear relace?
+Do you want to proceed=Chceš pokračovat?
+Do you want to resume all running preclear sessions=Chceš obnovit všechny pozastavené Preclear relace?
+Do you want to resume it instead of starting a new one=Chceš relaci obnovit místo zahájení nové?
+Do you want to stop all running preclear sessions=Chceš zastavit všechny probíhající Preclear relace?
+Fail=Selhalo
+Fix=Opravit
+Fix Preclear=Opravit Preclear
+Pause All Preclear Sessions=Pozastavit všechny Preclear relace
+Preclear Log=Preclear protokol
+Resume=Obnovit
+Resume All Preclear Sessions=Obnovit všechny Preclear relace
+Resume Preclear=Obnovit Preclear
+Set=Nastavit
+Set Queue Limit=Nastavit limit fronty
+Start New=Spustit novou
+Start Preclear=Spustit Preclear
+Stop All Preclear Sessions=Zastavit všechny Preclear relace
+Stop Preclear=Zastavit Preclear
+Success=Úspěch
+There is a previous preclear session available for this drive=Pro tento disk je dostupná předchozí relace Preclear
+This will stop all running sessions, halt all processes and remove all related files=Tím se zastaví všechny relace, ukončí všechny procesy a odstraní se všechny související soubory
+
