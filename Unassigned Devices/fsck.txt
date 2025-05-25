@@ -1,8 +1,11 @@
-Dirty log detected=Zjištěn špinavý záznam
-File system corruption detected=Zjištěno porušení systému souborů
-File system corruption fixed=Porušení systému souborů opraveno
-Force Log Zeroing=Vynutit vynulování záznamů
-No file system corruption detected=Nebylo zjištěno porušení systému
-Note: All metadata updates in progress at the time of the crash will be lost, which may cause significant filesystem damage=Pozn.: Všechny aktualizace metadat co probíhaly v čase pádu budou ztraceny, což může znamenat významné porušení systému souborů
-Run with Correct flag=Spustit s příznakem Opravit
-This should only be used as a last resort if the filesystem cannot be mounted to replay the log=Toto používejte pouze jako poslední možnost pokud se nepodaří připojit systém souborů pro zobrazení záznamů
+Cannot determine file system on an encrypted disk=Nelze určit souborový systém na šifrovaném disku
+Dirty log detected=Zjištěn nečistý (dirty) protokol
+Executing file system check=Probíhá kontrola souborového systému
+Executing file system scrub=Probíhá kontrola a čištění souborového systému (scrub)
+File system corruption detected=Zjištěno poškození souborového systému
+File system corruption fixed=Poškození souborového systému opraveno
+Force Log Zeroing=Vynutit vynulování protokolu
+No file system corruption detected=Poškození souborového systému nebylo zjištěno
+Note: While there is some risk, if it is not possible to first mount the filesystem to clear the log, zeroing it is the only option to try and repair the filesystem, and in most cases it results in little or no data loss=Poznámka: Pokud není možné nejprve připojit souborový systém a vyčistit protokol, je jeho vynulování jedinou možností, jak se pokusit o opravu souborového systému – ve většině případů to vede jen k malým nebo žádným ztrátám dat
+Run with Correct flag=Spustit s příznakem opravy
+
