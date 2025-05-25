@@ -1,39 +1,41 @@
+Display Events=Zobrazit události
 File Activity=Aktivita souborů
 File Activity Monitoring=Sledování aktivity souborů
-Start File Activity=Spustit aktivitu souborů
+Start File Activity=Spustit službu sledování souborů
 Stop File Activity Monitoring=Zastavit sledování aktivity souborů
-Clear the File Activity log=Vyčistit záznam aktivity souborů
-Refresh log=Obnovit záznam
-Enable File Activity Monitoring=Povolit sledování aktivity souborů
-Enable for Unassigned Devices=Povolit pro nepřiřazená zařízení
-Enable for Cache and Pool Disks=Povolit pro mezipaměť a disky fondů
+Clear the File Activity log=Vymazat protokol aktivity souborů
+Refresh Page=Obnovit stránku
+Enable File Activity Monitoring=Zapnout sledování aktivity souborů
+Enable for Unassigned Devices=Zapnout pro nepřiřazené disky
+Enable for Cache and Pool Disks=Zapnout pro cache a pool disky
 ;
 ; Help
 ;
 :file_activity_loggging_plug:
-> Záznamy aktivity souborů:
+> Sledování aktivity souborů:
 >
-> Je monitorována a zaznamenávána aktivita čtení/zápis/změny na poli disků pomocí inotify a je zobrazována podle disku, UD disků a mezipaměti.
-> Pro zaznamenávání musíte spustit Aktivitu souborů.
-> Aktivita souborů je zamýšlena pro spouštění na krátkou dobu pro kontrolu aktivity disku.
-> Server se spoustou souborové aktivity může snadno zaplnit prostor pro záznamy.
-> The 'appdata' and 'Syslogs' directories are excluded.
+> Čtení, zápis a úpravy souborů jsou sledovány pomocí `inotify` v rámci pole disků a zobrazují se podle disku, sdílení, nepřiřazeného disku a cache.
+> Pro záznam aktivity na discích musí být spuštěna služba sledování aktivity souborů.
+> Tato služba by měla běžet pouze krátkou dobu, například při kontrole aktivit disků.
+> Server s vysokou aktivitou souborů může rychle vytvářet velké protokolové soubory nebo zaplnit úložiště, kam se protokoly ukládají.
+> Složky „appdata“, „Syslogs“ a „System“ jsou ze sledování vyloučeny.
 >
-> Poznámka: Záznamy aktivity souborů jsou zastaveny, pokud je zastaveno pole.
+> Poznámka: Služba sledování se ukončí při zastavení pole a znovu se spustí při jeho opětovném spuštění – pokud je tato možnost povolena.
 :end
 
 :file_activity_enable_logging_plug:
-> Pro povolení záznamů aktivity souborů po startu serveru nastavte na 'Ano'.
+> Nastavte na **Ano**, pokud chcete aktivovat sledování aktivity souborů při startu serveru.
 :end
 
 :file_activity_enable_ud_plug:
-> Pro povolení záznamů aktivity souborů pro nepřiřazená zařízení nastavte na 'Ano', pokud je nainstalován doplněk Nepřiřazená zařízení.
+> Nastavte na **Ano**, pokud chcete sledovat aktivitu souborů na nepřiřazených discích (vyžaduje plugin „Unassigned Devices“).
 :end
 
 :file_activity_enable_cache_plug:
-	> Pro povolení záznamů aktivity souborů pro fond disků mezipaměti nastavte na 'Ano'. Fond disků je dispozici jen v Unraid 6.9.
+> Nastavte na **Ano**, pokud chcete sledovat aktivitu souborů na cache a pool discích.  
+> U disků v poolu funguje pouze s Unraid 6.9 a vyšším.
 :end
 
-:file_activity_log_by_plug:
-	> Pro zaznamenávání aktivity disku nastavte na **Disk**.  Pro zaznamenávání aktivity sdílení nastavte na **Sdílení**.
+:file_activity_display_events_plug:
+> Udává počet zobrazených souborových událostí z protokolu pro každé sdílení nebo disk.
 :end
