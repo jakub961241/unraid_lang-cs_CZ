@@ -264,8 +264,6 @@ Windows 7XP=Windows 7/XP
 Windows 82012, newer Linux distros=Windows 8/2012 a novější distribuce Linuxu
 wsport for virtual console=WS port pro virtuální konzoli
 XML View=Zobrazení XML
-
-; Note: April 21, 2025 - 36 missing translations
 Configure the same IP address on the ipvtap interface=Nastavit stejnou IP adresu na rozhraní ipvtap
 Configure the VM with a static IP address=Nakonfigurovat VM se statickou IP adresou
 Deselect All=Odznačit vše
@@ -302,3 +300,10 @@ Template exists=Šablona již existuje
 vCPUs=Virtuální CPU
 virtual=virtuální
 VM Usage Statistics=Statistiky využití VM
+
+; Note: May 31, 2025 - 5 missing translations
+Disk capacity has to be greater than %s=Die Datenträgerkapazität muss größer als %s sein
+Name contains invalid characters or does not start with an alphanumberic for a ZFS storage locationOnly these special characters are valid Underscore _ Hyphen - Colon Period=Der Name beinhaltet ungültige Zeichen oder beginnt nicht mit einem alphanumerischem Zeichen für einen ZFS-Speicherpfad<br>Nur diese Sonderzeichen sind gültig: Unterstrich (_), Doppelpunkt (:) und Punkt (.)
+No IP, guest agent not installed=Keine IP, Gast-Agent ist nicht installiert
+Not enough free space, need at least %s MB=Nicht genügend freier Speicherplatz, es wird mindestens %s MB benötigt
+Template file write failed=Schreiben der Vorlagendatei fehlgeschlagen
