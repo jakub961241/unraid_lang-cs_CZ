@@ -989,3 +989,9 @@ Two letter country code=Dvoupísmenný kód země
 vcpu allocated to vm=Počet vCPU přidělených VM
 Wi-Fi=Wi-Fi
 Wireless=Bezdrátové
+
+; Note: May 31, 2025 - 4 missing translationsAdd commentMore actions
+No encrypted disks found=Add commentMore actions
+Otherwise use the keyfile method for UTF8 input=Otherwise use the **keyfile** method for UTF8 input
+Printable Characters Only=
+Use ASCII characters from space to tilde=Use **ASCII** characters from space ' ' to tilde '~'
