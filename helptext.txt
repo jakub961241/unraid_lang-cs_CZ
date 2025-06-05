@@ -2782,3 +2782,8 @@ Pokud nebude vláken dostatek, může služba NFS spadnout.
 :shares_fuse_file_descriptors_io_help:
 Nastavte počet FUSE deskriptorů souborů. Pokud dochází k vysoké aktivitě se soubory v poli, může být nutné tuto hodnotu navýšit.
 :end
+
+
+:nfs_client_max_protocol_help:Add commentMore actions
+Vyberte maximální verzi protokolu NFS, kterou chcete použít pro připojení vzdálených sdílených složek.
+:end
