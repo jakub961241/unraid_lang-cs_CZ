@@ -197,6 +197,4 @@ VPN Connections=VPN připojení
 W=W
 Warnings=Varování
 ZFS=ZFS
-
-; Poznámka: 21. dubna 2025 – 1 chybějící překlad
 Share count %s with %s public SMB and %s public NFS=Počet sdílení: %s z toho %s veřejné SMB a %s veřejné NFS
